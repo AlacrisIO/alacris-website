@@ -11,10 +11,10 @@
    ========================================================================== */
 
 html {
-    color: white;
+    color: black;
     font-size: 1em;
     line-height: 1.4;
-    background-color: #00b583;
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -98,22 +98,46 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#main_logo {
-  width: 30%;
-  margin: 4em auto 1em;
-  display:block;
+
+
+/*START ===== GENERAL REPEATING RULES ===== START*/
+
+.title {
+  color: #535962;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-h2 {
-  font-size: 3vw;
+.btn {
+  font-family: "Open Sans", sans-serif;
+  height: 50px;
+  min-width: 209px;
+  line-height: 50px;
+  border-radius: 2px;
+  background-color: #31A5DB;
+  box-shadow: 1px 1px 14px 0 rgba(30, 35, 44, 0.14);
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
   text-align: center;
 }
 
-p {
-  font-size: 2vw;
-  margin: auto 1em;
+/*END ===== GENERAL REPEATING RULES ===== END*/
+
+/*START ===== HEADER ===== START*/
+
+.header {
+
 }
 
+.header__logo { 
+
+}
+
+/*END ===== HEADER ===== END*/
 
 
 
