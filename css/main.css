@@ -508,12 +508,12 @@ textarea {
 }
 
 .blockchain-card__text {
-    margin-top: 12px;
-    color: #535962;
-    font-family: ".SF NS Display", sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
+  margin-top: 12px;
+  color: #535962;
+  font-family: ".SF NS Display", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
 }
 
 /*END ===== BLOCKCHAIN ===== END*/
@@ -525,12 +525,12 @@ textarea {
 }
 
 .who-we-are__subtitle {
-    color: #000000;
-    font-family: "Nexa Light", sans-serif;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-    text-transform: uppercase;
+  color: #000000;
+  font-family: "Nexa Light", sans-serif;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* FOUNDERS */
@@ -552,28 +552,28 @@ textarea {
 }
 
 .founder__name {
-    color: #535962;
-    font-family: "Nexa Bold", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    margin: 0;
+  color: #535962;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
 }
 
 .founder__position {
-    color: #ADADAD;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 19px;
-     margin: 4px 0 0 0;
+  color: #ADADAD;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 19px;
+  margin: 4px 0 0 0;
 }
 
 .founder__cv {
-    color: #1C2126;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    line-height: 17px;
-    margin: 4px 0 0 0;
+  color: #1C2126;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  margin: 4px 0 0 0;
 }
 
 .founder__socials {
@@ -593,9 +593,9 @@ textarea {
 }
 
 .founder-socials-item__twitter {
-width: 20px;
-height: 23px;
-background-image: url();
+  width: 20px;
+  height: 23px;
+  background-image: url();
 }
 
 /* CORE TEAM */
@@ -605,6 +605,7 @@ background-image: url();
 }
 
 .core-team__members-list {
+  padding-left: 0;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -621,21 +622,21 @@ background-image: url();
 }
 
 .core-team-member__name {
-    color: #1C2126;
-    font-family: "Nexa Bold", sans-serif;
-    font-size: 17px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
+  color: #1C2126;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .core-team-member__position {
-    color: #ADADAD;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 27px;
-    text-align: center;
+  color: #ADADAD;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 27px;
+  text-align: center;
 }
 
 /* ADVISORS */
@@ -643,7 +644,49 @@ background-image: url();
 .advisors__title {
   margin: 130px 0 0 0;
 }
+
 /*END ===== WHO-WE-ARE ===== END*/
+
+/*START ===== PARTNERS/INVESTORS ===== START*/
+.partners-investors {
+  background-image: url(../img/bg/partners-investors-bg.png);
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 64px 0 93px;
+}
+
+.partners-investors-list {
+  padding-left: 45px;
+  padding-right: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 47px;
+}
+
+.partners-investors-list-item__image {
+  max-width: 200px;
+}
+
+.partners-investors-list-item__image_dcu {
+  width: 194px;
+}
+
+.partners-investors-list-item__image_legilogic { 
+width: 149px;
+}
+
+.partners-investors-list-item__image_nervos {
+  width: 170px;
+}
+
+.partners-investors-list-item__image_cmb {
+  width: 191px;
+}
+
+
+/*END ===== PARTNERS/INVESTORS ===== END*/
 
 
 
