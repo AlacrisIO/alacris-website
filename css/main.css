@@ -134,7 +134,7 @@ textarea {
 .btn:focus,
 .btn:active {
   background-color: rgba(49, 165, 219, 0.2);
-  border-color:#31A5DB;
+  border-color: #31A5DB;
   color: #244769;
 }
 
@@ -217,7 +217,7 @@ textarea {
   cursor: pointer;
   position: relative;
   transition: opacity .3s ease;
-  
+
 }
 
 .header-nav-item-link_telegram {
@@ -225,6 +225,7 @@ textarea {
   width: 100%;
   height: 100%;
 }
+
 .header-nav-item_telegram:hover {
   opacity: 0.7;
 }
@@ -267,6 +268,7 @@ textarea {
 .hero__btn {
   margin-top: 65px;
 }
+
 /*END ===== HERO ===== END*/
 
 /*START ===== DESCRIPTION ===== START*/
@@ -275,6 +277,7 @@ textarea {
   display: flex;
   position: relative;
 }
+
 .description:after {
   content: '';
   display: block;
@@ -295,14 +298,14 @@ textarea {
 }
 
 .description__title {
-    font-family: "Nexa Bold", sans-serif;
-    font-size: 30px;
-    max-width: 370px;
-    letter-spacing: 1px;
-    line-height: 43px;
-    color: #000;
-    text-transform: uppercase;
-    margin: 0;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 30px;
+  max-width: 370px;
+  letter-spacing: 1px;
+  line-height: 43px;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .description-title__span {
@@ -315,11 +318,11 @@ textarea {
 
 .description__text {
   margin: 0;
-    color: #535962;
-    font-family: ".SF NS Display", sans-serif;
-    font-size: 17px;
-    letter-spacing: 0.36px;
-    line-height: 24px;
+  color: #535962;
+  font-family: ".SF NS Display", sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.36px;
+  line-height: 24px;
 }
 
 /*END ===== DESCRIPTION ===== END*/
@@ -330,10 +333,12 @@ textarea {
   justify-content: center;
   display: flex;
 }
+
 .benefits__content {
   overflow-x: hidden;
- display: inline-block;
+  display: inline-block;
 }
+
 .benefits-card {
   padding-top: 45px;
   padding-bottom: 42px;
@@ -352,16 +357,16 @@ textarea {
 
 .benefits-card:before,
 .benefits-card:after {
- z-index: -1;
- position: absolute;
- content: "";
- width: 100%;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
 }
 
 .benefits-card:before {
   box-shadow: 0 -2px 30px rgba(0, 0, 0, 0.2);
-    top: 15px;
-    bottom: 80%;
+  top: 15px;
+  bottom: 80%;
 }
 
 .benefits-card:nth-child(even):before {
@@ -383,7 +388,7 @@ textarea {
 }
 
 .benefits-card:nth-child(even):after {
-    right: 10px;
+  right: 10px;
   transform: rotate(0.5deg);
 }
 
@@ -398,21 +403,21 @@ textarea {
 }
 
 .benefits-card-info__title {
-    margin-top: 45px;
-    color: #31A5DB;
-    font-family: "Nexa Bold", sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: uppercase;
+  margin-top: 45px;
+  color: #31A5DB;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .benefits-card-info__text {
-    margin-top: 13px;
-    max-width: 236px;
-    color: #244769;
-    font-family: ".SF NS Display", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+  margin-top: 13px;
+  max-width: 236px;
+  color: #244769;
+  font-family: ".SF NS Display", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .benefits-card__image {
@@ -436,6 +441,209 @@ textarea {
 
 /*END ===== BENEFITS ===== END*/
 
+/*START ===== BLOCKCHAIN ===== START*/
+.blockchain {
+  padding: 270px 0 186.84px 0;
+  background-image: url(../img/bg/blockchain-bg.png);
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1920px) {
+  .blockchain {
+    background-size: 100% 100%;
+  }
+}
+
+.blockchain__subtitle {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Nexa Light", sans-serif;
+  font-size: 19px;
+
+  text-transform: uppercase;
+  line-height: 23px;
+  text-align: center;
+}
+
+.blockchain__subtitle_strong {
+  color: #000;
+}
+
+.blockchain__cards {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: space-between;
+}
+
+.blockchain-card {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: #fff;
+  height: 261px;
+  max-width: 256px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blockchain-card__image {
+  height: 80px;
+  width: auto;
+  margin: 28px 0 0 0;
+}
+
+.blockchain-card__title {
+  color: #31A5DB;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  margin: 28px 0 0 0;
+}
+
+.blockchain-card__text {
+    margin-top: 12px;
+    color: #535962;
+    font-family: ".SF NS Display", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+/*END ===== BLOCKCHAIN ===== END*/
+
+/*START ===== WHO-WE-ARE ===== START*/
+
+.who-we-are__title {
+  margin: 100.16px 0 0 0;
+}
+
+.who-we-are__subtitle {
+    color: #000000;
+    font-family: "Nexa Light", sans-serif;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* FOUNDERS */
+
+.founder {
+  display: flex;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
+}
+
+.founder__image {
+  width: 44.6%;
+  height: 100%;
+}
+
+.founder__info {
+  padding: 12px;
+  position: relative;
+}
+
+.founder__name {
+    color: #535962;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.founder__position {
+    color: #ADADAD;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 19px;
+     margin: 4px 0 0 0;
+}
+
+.founder__cv {
+    color: #1C2126;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 4px 0 0 0;
+}
+
+.founder__socials {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: -8px;
+  margin-left: -8px;
+  list-style-type: none;
+
+}
+
+.founder-socials__item {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.founder-socials-item__twitter {
+width: 20px;
+height: 23px;
+background-image: url();
+}
+
+/* CORE TEAM */
+
+.core-team__title {
+  margin: 119px 0 0 0;
+}
+
+.core-team__members-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.core-team__member {
+  width: 166px;
+  position: relative;
+}
+
+.core-team-member__image {
+  width: 100%;
+}
+
+.core-team-member__name {
+    color: #1C2126;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.core-team-member__position {
+    color: #ADADAD;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 27px;
+    text-align: center;
+}
+
+/* ADVISORS */
+
+.advisors__title {
+  margin: 130px 0 0 0;
+}
+/*END ===== WHO-WE-ARE ===== END*/
 
 
 
