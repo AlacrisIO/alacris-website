@@ -13,6 +13,7 @@
   <!-- Place favicon.ico in the root directory -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -25,33 +26,40 @@
   <h1 class="visuallyhidden">Alacris Protocol</h1>
   <header class="header">
     <div class="container">
-      <img src="" alt="Alacris" class="header__logo">
-
+      <div class="row justify-content-between">
+        <div class="col-md-2 header-logo__wrapper">
+      <img src="img/logo/header__logo.png" alt="Alacris" class="header__logo header-logo">
+        </div>
+<div class="col-md-7">
       <nav class="header__nav header-nav">
-        <ul>
+        <ul class="header-nav__list">
           <li class="header-nav__item header-nav-item">
-            <a href="#Home" class="header-nav-item__link">Home</a>
+            <a tabindex="1" href="#Home" class="header-nav-item__link">Home</a>
           </li>
           <li class="header-nav__item header-nav-item">
-            <a href="#Benefits" class="header-nav-item__link">Benefits</a>
+            <a tabindex="2" href="#Benefits" class="header-nav-item__link">Benefits</a>
           </li>
           <li class="header-nav__item header-nav-item">
-            <a href="#OurTeam" class="header-nav-item__link">Our team</a>
+            <a tabindex="3" href="#OurTeam" class="header-nav-item__link">Our team</a>
           </li>
           <li class="header-nav__item header-nav-item">
-            <a href="#Partners" class="header-nav-item__link">Partners</a>
+            <a tabindex="4" href="#Partners" class="header-nav-item__link">Partners</a>
           </li>
           <li class="header-nav__item header-nav-item">
-            <a href="#ContactUs" class="header-nav-item__link">Contact us</a>
+            <a tabindex="5" href="#ContactUs" class="header-nav-item__link">Contact us</a>
           </li>
           <li class="header-nav__item header-nav-item">
-            <a href="#Blog" class="header-nav-item__link">Blog</a>
+            <a tabindex="5"  href="#Blog" class="header-nav-item__link">Blog</a>
           </li>
+  <li class="header-nav__item header-nav-item header-nav-item_telegram">
+    <a href="" class="header-nav-item-link_telegram"></a>
+  </li>
         </ul>
       </nav>
+      </div>
     </div> 
   </header>
-  <section class="hero" style="background-image: url(img/hero-bg.png)">
+  <section class="hero" style="background-image: url(img/bg/hero-bg.png)">
     <img src="" alt="Alacris" class="hero__logo">
     <h2 class="h2 uppercase hero__title">Making your blockchain application
       fast, secure and accessible.</h2>

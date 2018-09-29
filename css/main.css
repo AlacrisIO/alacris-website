@@ -12,7 +12,7 @@
 
 html {
   color: black;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -129,9 +129,92 @@ textarea {
 
 /*START ===== HEADER ===== START*/
 
-.header {}
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+}
 
-.header__logo {}
+.header__logo {
+  width: 100%;
+  max-width: 121.41px;
+  max-height: 24px;
+  margin-left: 15px;
+}
+
+.header-logo__wrapper {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.header-nav__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.header-nav-item__link {
+  color: #535962;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.header-nav-item__link:after {
+  display: block;
+  content: '';
+  width: 110%;
+  margin-left: -10%;
+  height: 2px;
+  max-width: 0;
+  background: linear-gradient(155deg, rgba(49, 165, 219, 0) 1%, rgba(49, 165, 219, 0) 4%, rgba(49, 165, 219, 0) 7%, rgba(49, 165, 219, 0) 10%, rgba(49, 165, 219, 1) 11%, rgba(49, 165, 219, 1) 16%, rgba(49, 165, 219, 1) 17%, rgba(49, 165, 219, 1) 100%);
+  border-radius: 1px 1px 1px 0.2px;
+  transition: max-width .3s ease;
+}
+
+.header-nav-item:hover .header-nav-item__link {
+  color: #31A5DB;
+}
+
+.header-nav-item__link:active,
+.header-nav-item__link:focus {
+  outline: 0
+}
+
+.header-nav-item:hover .header-nav-item__link:after,
+.header-nav-item__link:active:after,
+.header-nav-item__link:focus:after {
+  max-width: 110%;
+}
+
+.header-nav-item_telegram {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icons/telegram.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  cursor: pointer;
+  position: relative;
+  transition: opacity .3s ease;
+  
+}
+
+.header-nav-item-link_telegram {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header-nav-item_telegram:hover {
+  opacity: 0.7;
+}
 
 /*END ===== HEADER ===== END*/
 
