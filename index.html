@@ -13,7 +13,7 @@
   <!-- Place favicon.ico in the root directory -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -28,56 +28,69 @@
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-md-2 header-logo__wrapper">
-      <img src="img/logo/header__logo.png" alt="Alacris" class="header__logo header-logo">
+          <img src="img/logo/header__logo.png" alt="Alacris" class="header__logo header-logo">
         </div>
-<div class="col-md-7">
-      <nav class="header__nav header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item header-nav-item">
-            <a tabindex="1" href="#Home" class="header-nav-item__link">Home</a>
-          </li>
-          <li class="header-nav__item header-nav-item">
-            <a tabindex="2" href="#Benefits" class="header-nav-item__link">Benefits</a>
-          </li>
-          <li class="header-nav__item header-nav-item">
-            <a tabindex="3" href="#OurTeam" class="header-nav-item__link">Our team</a>
-          </li>
-          <li class="header-nav__item header-nav-item">
-            <a tabindex="4" href="#Partners" class="header-nav-item__link">Partners</a>
-          </li>
-          <li class="header-nav__item header-nav-item">
-            <a tabindex="5" href="#ContactUs" class="header-nav-item__link">Contact us</a>
-          </li>
-          <li class="header-nav__item header-nav-item">
-            <a tabindex="5"  href="#Blog" class="header-nav-item__link">Blog</a>
-          </li>
-  <li class="header-nav__item header-nav-item header-nav-item_telegram">
-    <a href="" class="header-nav-item-link_telegram"></a>
-  </li>
-        </ul>
-      </nav>
+        <div class="col-md-7">
+          <nav class="header__nav header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item header-nav-item">
+                <a tabindex="1" href="#Home" class="header-nav-item__link">Home</a>
+              </li>
+              <li class="header-nav__item header-nav-item">
+                <a tabindex="2" href="#Benefits" class="header-nav-item__link">Benefits</a>
+              </li>
+              <li class="header-nav__item header-nav-item">
+                <a tabindex="3" href="#OurTeam" class="header-nav-item__link">Our team</a>
+              </li>
+              <li class="header-nav__item header-nav-item">
+                <a tabindex="4" href="#Partners" class="header-nav-item__link">Partners</a>
+              </li>
+              <li class="header-nav__item header-nav-item">
+                <a tabindex="5" href="#ContactUs" class="header-nav-item__link">Contact us</a>
+              </li>
+              <li class="header-nav__item header-nav-item">
+                <a tabindex="5" href="#Blog" class="header-nav-item__link">Blog</a>
+              </li>
+              <li class="header-nav__item header-nav-item header-nav-item_telegram">
+                <a href="" class="header-nav-item-link_telegram"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div> 
   </header>
   <section class="hero" style="background-image: url(img/bg/hero-bg.png)">
-    <img src="" alt="Alacris" class="hero__logo">
-    <h2 class="h2 uppercase hero__title">Making your blockchain application
-      fast, secure and accessible.</h2>
-    <a href="#" class="btn hero__btn">Contact Us</a>
+    <div class="container hero__container">
+      <img src="img/logo/hero__logo.png" alt="Alacris" class="hero__logo">
+      <h2 class="h2 uppercase hero__title">Making your blockchain application
+        fast, secure and accessible.</h2>
+      <a href="#" class="btn hero__btn">Contact Us</a>
   </section>
   <section class="description">
-    <h3 class="h3 description__title description-title">
-      <span class="description-title__span description-title__span_gray">Alacris is a Layer 2 </span>
-      <span class="description-title__span">Operating System</span>
-      <span class="description-title__span description-title__span_gray">for the blockchain.</span>
-    </h3>
-    <p class="description__text">It provides unlimited scalability, formalized security, automatic fraud detection and
-      recovery, as well as bridges to layer 1 protocols. It abstracts away all infrastructure concerns away from the
-      DApp
-      developers so they can focus on building the applications.</p>
+    <div class="container">
+      <div class="row description__row">
+        <div class="col-md-5 offset-md-1">
+          <h3 class="h3 description__title description-title">
+            <span class="description-title__span description-title__span_gray">Alacris is a Layer 2 </span>
+            <span class="description-title__span">Operating System</span>
+            <span class="description-title__span description-title__span_gray">for the blockchain.</span>
+          </h3>
+        </div>
+        <div class="col-md-5">
+          <p class="description__text">It provides unlimited scalability, formalized security, automatic fraud
+            detection and
+            recovery, as well as bridges to layer 1 protocols. It abstracts away all infrastructure concerns away from
+            the
+            DApp
+            developers so they can focus on building the applications.</p>
+        </div>
+      </div>
+    </div>
+
   </section>
   <section class="benefits">
-    <div class="container">
+    <div class="container benefits__container">
+      <div class="benefits__content">
       <h3 class="title benefits__title">Benefits</h3>
       <div class="benefits__card benefits-card">
         <div class="benefits-card__info benefits-card-info">
@@ -86,7 +99,7 @@
             provides
             tooling and framework to make it easier to develop on the blockchain you choose.</p>
         </div>
-        <img src="" alt="" class="benefits-card__image">
+        <img src="img/icons/cake.png" alt="Cake" class="benefits-card__image benefits-card__image_cake">
       </div>
       <div class="benefits__card benefits-card">
         <div class="benefits-card__info benefits-card-info">
@@ -94,7 +107,7 @@
           <p class="benefits-card-info__text">Transaction confirmation within seconds with 100,000 transactions per
             second per Alcacris Node.</p>
         </div>
-        <img src="" alt="" class="benefits-card__image">
+        <img src="img/icons/speed.png" alt="speed" class="benefits-card__image benefits-card__image_speed">
       </div>
       <div class="benefits__card benefits-card">
         <div class="benefits-card__info benefits-card-info">
@@ -103,8 +116,9 @@
             Formally verified workflows for extra security.
           </p>
         </div>
-        <img src="" alt="" class="benefits-card__image">
+        <img src="img/icons/security.png" alt="security" class="benefits-card__image benefits-card__image_security">
       </div>
+        </div>
     </div>
   </section>
   <section class="blockchain">
@@ -281,35 +295,35 @@
       </div>
     </section>
   </section>
-<section class="partners-investors">
-  <ul class="partners-investors__list partners-investors-list">
-    <li class="partners-investors-list__item partners-investors-list-item">
-      <img src="" alt="" class="partners-investors-list-item__image">
-    </li>
-    <li class="partners-investors-list__item partners-investors-list-item">
-      <img src="" alt="" class="partners-investors-list-item__image">
-    </li>
-    <li class="partners-investors-list__item partners-investors-list-item">
-      <img src="" alt="" class="partners-investors-list-item__image">
-    </li>
-    <li class="partners-investors-list__item partners-investors-list-item">
-      <img src="" alt="" class="partners-investors-list-item__image">
-    </li>
-  </ul>
-</section>
-<section class="contact-us">
-<h3 class="title contact-us__title">If you have any questions</h3>
-<div class="contact-us__content">
-  <img src="" alt="" class="conact-us__image">
-<a href="" class="btn contact-us__button">Fill out the Form</a>
-</div>
-</section>
-<footer class="footer">
-  <div class="container">
-    <img src="" alt="" class="footer__logo">
-    <a href="#" class="footer__telegram"></a>
-  </div>
-</footer>
+  <section class="partners-investors">
+    <ul class="partners-investors__list partners-investors-list">
+      <li class="partners-investors-list__item partners-investors-list-item">
+        <img src="" alt="" class="partners-investors-list-item__image">
+      </li>
+      <li class="partners-investors-list__item partners-investors-list-item">
+        <img src="" alt="" class="partners-investors-list-item__image">
+      </li>
+      <li class="partners-investors-list__item partners-investors-list-item">
+        <img src="" alt="" class="partners-investors-list-item__image">
+      </li>
+      <li class="partners-investors-list__item partners-investors-list-item">
+        <img src="" alt="" class="partners-investors-list-item__image">
+      </li>
+    </ul>
+  </section>
+  <section class="contact-us">
+    <h3 class="title contact-us__title">If you have any questions</h3>
+    <div class="contact-us__content">
+      <img src="" alt="" class="conact-us__image">
+      <a href="" class="btn contact-us__button">Fill out the Form</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <img src="" alt="" class="footer__logo">
+      <a href="#" class="footer__telegram"></a>
+    </div>
+  </footer>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
