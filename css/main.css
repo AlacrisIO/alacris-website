@@ -128,14 +128,63 @@ textarea {
   transition: all .3s ease;
   border: 2px solid transparent;
   cursor: pointer;
+  display: inline-block;
 }
 
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background-color: rgba(49, 165, 219, 0.2);
+background-color: rgba(49, 165, 219, 0.2);
   border-color: #31A5DB;
   color: #244769;
+}
+
+.shadow-card {
+  position: relative;
+    width: 630px;
+}
+
+
+.shadow-card:before,
+.shadow-card:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+}
+
+.shadow-card:before {
+  box-shadow: 0 -2px 30px rgba(0, 0, 0, 0.2);
+  top: 15px;
+  bottom: 80%;
+}
+
+.shadow-card:nth-child(even):before {
+  right: 10px;
+  transform: rotate(-0.5deg);
+}
+
+.shadow-card:nth-child(odd):before {
+  left: 10px;
+  transform: rotate(0.5deg);
+}
+
+
+.shadow-card:after {
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  bottom: 15px;
+  top: 80%;
+
+}
+
+.shadow-card:nth-child(even):after {
+  right: 10px;
+  transform: rotate(0.5deg);
+}
+
+.shadow-card:nth-child(odd):after {
+  left: 10px;
+  transform: rotate(-0.5deg);
 }
 
 /*END ===== GENERAL REPEATING RULES ===== END*/
@@ -342,9 +391,7 @@ textarea {
 .benefits-card {
   padding-top: 45px;
   padding-bottom: 42px;
-  width: 630px;
-  margin: 30px auto;
-  position: relative;
+  margin: 24px auto;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -353,48 +400,6 @@ textarea {
 
 .benefits-card:nth-child(odd) {
   flex-direction: row-reverse
-}
-
-.benefits-card:before,
-.benefits-card:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  width: 100%;
-}
-
-.benefits-card:before {
-  box-shadow: 0 -2px 30px rgba(0, 0, 0, 0.2);
-  top: 15px;
-  bottom: 80%;
-}
-
-.benefits-card:nth-child(even):before {
-  right: 10px;
-  transform: rotate(-0.5deg);
-}
-
-.benefits-card:nth-child(odd):before {
-  left: 10px;
-  transform: rotate(0.5deg);
-}
-
-
-.benefits-card:after {
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
-  bottom: 15px;
-  top: 80%;
-
-}
-
-.benefits-card:nth-child(even):after {
-  right: 10px;
-  transform: rotate(0.5deg);
-}
-
-.benefits-card:nth-child(odd):after {
-  left: 10px;
-  transform: rotate(-0.5deg);
 }
 
 .benefits-card-info {
@@ -688,7 +693,31 @@ width: 149px;
 
 /*END ===== PARTNERS/INVESTORS ===== END*/
 
+/*START ===== CONTACT US ===== START*/
 
+.contact-us__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us__content {
+  background-color: #fff;
+  padding: 57px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us__image {
+  width: 175px;
+}
+
+.contact-us__button {
+  margin-right: 65px;
+}
+
+/*END ===== CONTACT US ===== END*/
 
 
 
