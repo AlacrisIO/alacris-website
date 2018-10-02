@@ -16,6 +16,7 @@ html {
   line-height: 1.4;
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 /*
@@ -109,6 +110,7 @@ textarea {
   line-height: 43px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .btn {
@@ -134,14 +136,14 @@ textarea {
 .btn:hover,
 .btn:focus,
 .btn:active {
-background-color: rgba(49, 165, 219, 0.2);
+  background-color: rgba(49, 165, 219, 0.2);
   border-color: #31A5DB;
   color: #244769;
 }
 
 .shadow-card {
   position: relative;
-    width: 630px;
+  width: 630px;
 }
 
 
@@ -187,11 +189,120 @@ background-color: rgba(49, 165, 219, 0.2);
   transform: rotate(-0.5deg);
 }
 
+.see-more {
+  color: #31A5DB;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity .3s ease;
+}
+
+.see-more:hover {
+  opacity: 0.6;
+}
+
+.twitter-icon {
+  background-image: url(../img/icons/twitter.png);
+  width: 20px;
+  height: 23px;
+  margin-top: 2px;
+}
+
+.linkedin-icon {
+  background-image: url(../img/icons/linkedin.png);
+  width: 19px;
+  height: 22px;
+}
+
+.socials-icon {
+  margin-left: 9px;
+  margin-right: 9px;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.telegram-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icons/telegram.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  cursor: pointer;
+  position: relative;
+  transition: opacity .3s ease;
+  display: block;
+
+}
+
+.telegram-icon:hover {
+  opacity: 0.7;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger__inner {
+  width: 21px;
+  height: 2px;
+  background-color: #31A5DB;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.hamburger:before,
+.hamburger:after {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #31A5DB;
+  border-radius: 3px;
+  transition: all .275s ease .025s;
+}
+
+.hamburger:before {
+  width: 16px;
+  margin-top: -5px;
+}
+
+.hamburger:after {
+  width: 14px;
+  margin-top: 3px;
+}
+
+.hamburger.active .hamburger__inner {
+  background-color: rgba(49, 165, 219, 0);
+  transform: translateX(15px);
+}
+
+.hamburger.active:before {
+  transform: translate(0, 9.5px) rotate(45deg);
+  width: 20px;
+}
+
+.hamburger.active:after {
+  transform: rotate(-45deg);
+  width: 20px;
+
+}
+
 /*END ===== GENERAL REPEATING RULES ===== END*/
 
 /*START ===== HEADER ===== START*/
 
+.mmenu__list {
+  display: none;
+  padding-left: 0;
+}
+
 .header {
+  z-index: 10;
   position: fixed;
   width: 100%;
   height: 60px;
@@ -203,6 +314,10 @@ background-color: rgba(49, 165, 219, 0.2);
   max-width: 121.41px;
   max-height: 24px;
   margin-left: 15px;
+}
+
+.header-nav__telegram {
+  display: none;
 }
 
 .header-logo__wrapper {
@@ -312,6 +427,7 @@ background-color: rgba(49, 165, 219, 0.2);
   text-align: center;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   margin-top: 59px;
+  text-transform: uppercase;
 }
 
 .hero__btn {
@@ -378,10 +494,16 @@ background-color: rgba(49, 165, 219, 0.2);
 
 /*START ===== BENEFITS ===== START*/
 
+.benefits__title {
+  margin-top: 47px;
+  margin-bottom: 18px;
+}
+
 .benefits__container {
   justify-content: center;
   display: flex;
 }
+
 
 .benefits__content {
   overflow-x: hidden;
@@ -449,13 +571,14 @@ background-color: rgba(49, 165, 219, 0.2);
 /*START ===== BLOCKCHAIN ===== START*/
 .blockchain {
   padding: 270px 0 186.84px 0;
+  margin-bottom: 50px;
   background-image: url(../img/bg/blockchain-bg.png);
   background-size: auto 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1500px) {
   .blockchain {
     background-size: 100% 100%;
   }
@@ -480,6 +603,7 @@ background-color: rgba(49, 165, 219, 0.2);
   margin-right: -15px;
   margin-left: -15px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .blockchain-card {
@@ -509,6 +633,7 @@ background-color: rgba(49, 165, 219, 0.2);
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
   margin: 28px 0 0 0;
 }
 
@@ -525,8 +650,12 @@ background-color: rgba(49, 165, 219, 0.2);
 
 /*START ===== WHO-WE-ARE ===== START*/
 
+.who-we-are {
+  padding-top: 50px;
+}
+
 .who-we-are__title {
-  margin: 100.16px 0 0 0;
+  margin: 0;
 }
 
 .who-we-are__subtitle {
@@ -536,6 +665,32 @@ background-color: rgba(49, 165, 219, 0.2);
   line-height: 37px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  background: #fff;
+  display: block;
+  z-index: 5;
+  overflow-x: hidden;
+}
+
+.who-we-are__subtitle:before,
+.who-we-are__subtitle:after {
+  content: '';
+  height: 1px;
+  display: inline-block;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+
+}
+
+.who-we-are__subtitle:before {
+  background-image: linear-gradient(to left, rgba(201, 237, 219, 1), rgba(210, 244, 252, 1));
+  transform: translateX(calc(-100% - 13px));
+}
+
+.who-we-are__subtitle:after {
+  margin-left: 13px;
+  background-image: linear-gradient(to right, rgba(201, 237, 219, 1), rgba(210, 244, 252, 1));
 }
 
 /* FOUNDERS */
@@ -562,6 +717,7 @@ background-color: rgba(49, 165, 219, 0.2);
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .founder__position {
@@ -585,22 +741,84 @@ background-color: rgba(49, 165, 219, 0.2);
   display: flex;
   position: absolute;
   bottom: 0;
-  right: 0;
-  margin-right: -8px;
-  margin-left: -8px;
+  right: 12px;
+  margin: 0 -9px 12px -9px;
   list-style-type: none;
+  padding-left: 0;
 
 }
 
-.founder-socials__item {
-  margin-left: 8px;
-  margin-right: 8px;
+
+
+/* ADVISORS */
+
+.advisors {
+  margin-bottom: 100px;
 }
 
-.founder-socials-item__twitter {
-  width: 20px;
-  height: 23px;
-  background-image: url();
+.advisor {
+  display: flex;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11);
+  height: 220px;
+  margin-bottom: 23px;
+}
+
+.advisors__title {
+  margin: 130px 0 32px 0;
+}
+
+.advisor__image {
+  height: 220px;
+}
+
+  .advisors__see-more {
+    margin: 0;
+  }
+
+.advisor__info {
+  padding: 17px 15px 21px 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.advisor__name {
+  color: #1C2126;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advisor__position {
+  color: #ADADAD;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 19px;
+  margin: 4px 0 0 0;
+}
+
+.advisor__cv {
+  color: #1C2126;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 17px;
+  margin: 0;
+}
+
+.advisors-socials {
+  display: flex;
+  position: absolute;
+  list-style-type: none;
+  margin: 0 -9px 0 -9px;
+  right: 15px;
+  bottom: 20px;
+
 }
 
 /* CORE TEAM */
@@ -613,6 +831,7 @@ background-color: rgba(49, 165, 219, 0.2);
   padding-left: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
 }
@@ -633,6 +852,7 @@ background-color: rgba(49, 165, 219, 0.2);
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin: 18px 0 0 0;
 }
 
 .core-team-member__position {
@@ -642,13 +862,10 @@ background-color: rgba(49, 165, 219, 0.2);
   font-style: italic;
   line-height: 27px;
   text-align: center;
+  margin: 3px 0 0 0;
 }
 
-/* ADVISORS */
 
-.advisors__title {
-  margin: 130px 0 0 0;
-}
 
 /*END ===== WHO-WE-ARE ===== END*/
 
@@ -658,12 +875,14 @@ background-color: rgba(49, 165, 219, 0.2);
   background-size: 100% 100%;
   background-position: center;
   padding: 64px 0 93px;
+  margin-bottom: 70px;
 }
 
 .partners-investors-list {
   padding-left: 45px;
   padding-right: 45px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
@@ -678,8 +897,8 @@ background-color: rgba(49, 165, 219, 0.2);
   width: 194px;
 }
 
-.partners-investors-list-item__image_legilogic { 
-width: 149px;
+.partners-investors-list-item__image_legilogic {
+  width: 149px;
 }
 
 .partners-investors-list-item__image_nervos {
@@ -695,6 +914,14 @@ width: 149px;
 
 /*START ===== CONTACT US ===== START*/
 
+.contact-us {
+  padding: 50px 0 105px 0;
+}
+
+.contact-us__title {
+  margin: 0;
+}
+
 .contact-us__container {
   display: flex;
   flex-direction: column;
@@ -702,11 +929,19 @@ width: 149px;
 }
 
 .contact-us__content {
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 75px;
+}
+
+.contact-us-card {
   background-color: #fff;
   padding: 57px 0 60px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin: 10px 0;
 }
 
 .contact-us__image {
@@ -719,7 +954,41 @@ width: 149px;
 
 /*END ===== CONTACT US ===== END*/
 
+/*START ===== FOOTER ===== START*/
+.footer {
+  background-color: #FBFBFB;
+  height: 89px;
+  position: relative;
+}
 
+.footer__container,
+.footer__row {
+  height: 100%;
+}
+
+
+
+
+.footer__logo {
+  width: 121.41px;
+  height: auto;
+  padding: 17px 0;
+  opacity: 0.2;
+}
+
+.footer__telegram {
+  background-image: url(../img/icons/telegram_grey.png);
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+
+/*END ===== FOOTER ===== END*/
 
 
 
@@ -814,92 +1083,607 @@ width: 149px;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media (max-width: 1199px) {
+
+  .blockchain-card {
+    max-width: 235px;
+  }
+
+  .founder__cv {
+    line-height: 15px;
+  }
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media (max-width: 991px) {
+
+  .hero {
+    background-image: url(../img/bg/hero-bg_mobile.png) !important;
+    max-height: none;
+  }
+
+  .description__title {
+    font-size: 26px;
+    line-height: 1.8;
+  }
+
+
+  .blockchain__cards {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .blockchain-card {
+    max-width: 261px;
+    margin-bottom: 30px;
+  }
+
+  .blockchain-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .founder {
+    max-width: 580px;
+    margin-bottom: 30px;
+  }
+
+  .founder__cv {
+    line-height: 21px;
+    font-size: 13px;
+  }
+
+  .core-team__title {
+    margin-top: 49px;
+  }
+
+  .core-team-member {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .core-team-member__image {
+    width: 80%;
+    max-width: 240px;
+  }
+
+  .core-team-member {
+    margin-bottom: 30px;
+  }
+
+  .advisors__title {
+    margin-top: 60px;
+  }
+
+  .advisor {
+    max-width: 580px;
+  }
+
+  .partners-investors {
+    padding-bottom: 63px;
+  }
+
+  .partners-investors-list__item {
+    width: 50%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advisors {
+    margin-bottom: 40px;
+  }
+
+  .description:after {
+    background-image: url(../img/bg/arrow_mobile.png);
+    height: 42vw;
+    bottom: -98px;
+  }
+
+  .benefits {
+    margin-top: 50px;
+  }
 }
 
-/* ==========================================================================
+@media (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+
+  .header-nav__telegram {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header__row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .mmenu__list {
+    margin: 0;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    list-style-type: none
+  }
+
+  .mmenu-item {
+    width: 100%;
+    height: 87px;
+    max-height: calc(16.66% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .mmenu-item__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #535962;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    transition: color .3s ease;
+    outline: 0;
+    text-decoration: none;
+    user-select: none;
+  }
+
+  .mmenu-item__link:hover,
+  .mmenu-item__link:active,
+  .mmenu-item__link:focus {
+    user-select: none;
+    color: #31A5DB;
+    outline: 0;
+    background-color: #fff;
+  }
+
+  .mmenu__item:after {
+    content: '';
+    height: 1px;
+    border-radius: 3px;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(210, 244, 252, 1), rgba(201, 237, 219, 1));
+    display: block;
+    left: 13px;
+    bottom: 0;
+    width: calc(100% - 26px);
+  }
+
+  .mmenu__item:last-child:after {
+    display: none;
+  }
+
+  .description:after {
+    bottom: -60px;
+  }
+
+  .benefits {
+    margin-top: 100px;
+  }
+
+  .benefits__title {
+    margin-top: 80px;
+  }
+
+  .hero__logo {
+    margin-top: 80px;
+  }
+
+  .hero__container {
+    padding-left: 29px;
+    padding-right: 24px;
+  }
+
+  .hero__title {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .hero-title__span {
+    display: block;
+  }
+
+  .hero__btn {
+    margin-top: 50px;
+  }
+
+  .description__row {
+    margin-top: 41px;
+  }
+
+  .description__title {
+    font-size: 20px;
+    letter-spacing: 0.67px;
+    line-height: 36px;
+  }
+
+  .description__container {
+    padding: 0 40px 0 40px;
+  }
+
+  .description__text {
+    margin-top: 25px;
+  }
+
+  .benefits {
+    margin-top: 80px;
+  }
+
+  .benefits__title {
+    margin-top: 0;
+  }
+
+  .shadow-card {
+    width: auto;
+  }
+
+  .benefits__content {
+    width: 100%;
+  }
+
+  .benefits-card-info__text {
+    max-width: none;
+  }
+
+  .benefits__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .benefits-card {
+    padding: 0 25px;
+    margin-left: -6px;
+    margin-right: -6px;
+    height: 232px;
+  }
+
+  .benefits-card__info {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  .benefits-card__image {
+    margin-right: 6px;
+    margin-left: 6px;
+    width: 105px;
+    height: auto;
+  }
+
+  .benefits-card-info__title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .benefits-card-info__text {
+    margin-top: 12px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .benefits-card__image_speed {
+    margin-right: 19px;
+  }
+
+  .benefits-card__image_cake {
+    margin-bottom: 50px;
+  }
+
+  .blockchain {
+    background-image: url(../img/bg/blockchain-bg_mobile.png);
+    padding-top: 131px;
+    background-size: 100% 100%;
+    margin-bottom: 18px;
+  }
+
+  .blockchain__subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 19px;
+    margin-bottom: 23px;
+  }
+
+  .blockchain-subtitle__span {
+    display: block;
+  }
+
+  .who-we-are__subtitle {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .who-we-are__subtitle:before {
+    transform: translateX(calc(-100% - 22px));
+  }
+
+  .who-we-are__subtitle:after {
+    margin-left: 22px;
+    background-image: linear-gradient(to right, rgba(201, 237, 219, 1), rgba(210, 244, 252, 1));
+  }
+
+  .founder,
+  .advisor {
+    flex-direction: column;
+    max-width: calc(100vw - 50px);
+    align-items: center;
+  }
+
+  .founder__info {
+    padding: 9px 20px 21px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder__cv {
+    align-self: flex-start;
+  }
+
+  .founder__socials {
+    position: relative;
+  }
+
+  .founder__image,
+  .advisor__image {
+    height: 150px;
+    width: 115px;
+    margin-top: 19.95px;
+    border-radius: 8px
+  }
+
+
+  .core-team__members-list {
+    justify-content: space-around;
+  }
+
+  .core-team-member {
+    width: 40vw;
+  }
+
+  .core-team-member__image {
+    width: 100%
+  }
+
+  .core-team-member__name {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 13px;
+  }
+
+  .core-team-member__position {
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 4px;
+  }
+
+  .advisors__title {
+    margin-top: 14px;
+    margin-bottom: 30px;
+  }
+
+  .advisor-image__wrapper {
+    height: 150px;
+    width: 115px;
+    margin-top: 19.95px;
+  }
+
+  .advisor {
+    height: 329px;
+    max-width: 325px;
+  }
+
+  .advisor__image {
+    object-fit: cover;
+    -o-object-fit: cover;
+    margin-top: 0;
+  }
+
+  .advisor__info {
+    padding: 12px 20px 20px 21px;
+  }
+
+  .advisor__name {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .advisor__position {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+
+  .advisors-socials {
+    bottom: 12px;
+  }
+
+  .partners-investors {
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  .see-more {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .partners-investors {
+    padding: 70px 0;
+  }
+  .partners-investors-list {
+    padding: 0;
+  }
+
+ .partners-investors-list-item__image_dcu {
+   width: 121px;
+ }
+
+ .partners-investors-list-item__image_legilogic {
+   width: 119px;
+ }
+
+ .partners-investors-list-item__image_nervos {
+   width: 122px;
+ }
+
+ .partners-investors-list-item__image_cmb {
+   width: 138px;
+ }
+
+ .contact-us {
+   padding: 0;
+   margin-bottom: 75px;
+ }
+
+.contact-us-card {
+  flex-direction: column;
+  align-items: center;
+  padding: 37px 0;
+}
+
+.contact-us__image {
+  width: 145px;
+}
+
+.contact-us__button {
+  margin-right: 0;
+  margin-top: 35px;
+}
+}
+
+
+@media (max-width: 620px) {
+  .description:after {
+    bottom: 0;
+  }
+
+  @media (max-width: 440px) {
+    .description__row {
+      padding-bottom: 150px;
+    }
+  }
+
+   @media (max-width: 390px) {
+   .blockchain {
+     background-size: auto 100%;
+   }
+  }
+
+  @media (max-width: 330px) {
+    .description__row {
+      padding-bottom: 120px;
+    }
+  }
+
+
+  /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
+  @media print {
 
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster */
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  a[href]:after {
-    content: " ("attr(href) ")";
-  }
+    a[href]:after {
+      content: " ("attr(href) ")";
+    }
 
-  abbr[title]:after {
-    content: " ("attr(title) ")";
-  }
+    abbr[title]:after {
+      content: " ("attr(title) ")";
+    }
 
-  /*
+    /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+      white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
 
-  /*
+    /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-  thead {
-    display: table-header-group;
+    thead {
+      display: table-header-group;
+    }
+
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
 
-  tr,
-  img {
-    page-break-inside: avoid;
+
+  @font-face {
+    font-family: "Nexa Bold";
+    src: url("..//fonts/nexa-bold.woff2") format("woff2"),
+      url("../fonts/nexa-bold.woff") format("woff");
   }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  @font-face {
+    font-family: "Nexa Light";
+    src: url("../fonts/nexa-light.woff2") format("woff2"),
+      url("../fonts/nexa-light.woff") format("woff");
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
