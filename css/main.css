@@ -1362,6 +1362,7 @@ textarea {
   .founder {
     max-width: 580px;
     margin-bottom: 30px;
+    height: auto;
   }
 
   .founder__cv {
@@ -1764,6 +1765,7 @@ textarea {
 
   .founder__socials {
     position: relative;
+    margin-top: 12px;
   }
 
   .founder__image,
