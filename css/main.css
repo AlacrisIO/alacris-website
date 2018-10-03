@@ -571,7 +571,7 @@ textarea {
 
 .benefits__title {
   margin-top: 47px;
-  margin-bottom: 18px;
+  margin-bottom: 42px;
 }
 
 .benefits__container {
@@ -1780,6 +1780,10 @@ textarea {
     border-radius: 8px
   }
 
+  .founders__title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
 
   .core-team__members-list {
     justify-content: space-around;
@@ -1894,7 +1898,7 @@ textarea {
 
   .contact-us {
     padding: 0;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
   }
 
   .contact-us-card {
@@ -1915,6 +1919,10 @@ textarea {
   .contact-us-card,
   .contact-us__content {
     width: 100vw;
+  }
+
+  .contact-us__content {
+    margin-top: 20px;
   }
 }
 
