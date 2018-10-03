@@ -149,6 +149,10 @@ textarea {
   width: 630px;
 }
 
+.shadow-card_hidden {
+  display: none;
+}
+
 
 .shadow-card:before,
 .shadow-card:after {
@@ -1906,6 +1910,11 @@ textarea {
   .contact-us__button {
     margin-right: 0;
     margin-top: 35px;
+  }
+
+  .contact-us-card,
+  .contact-us__content {
+    width: 100vw;
   }
 }
 
