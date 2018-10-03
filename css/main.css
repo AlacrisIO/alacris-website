@@ -794,6 +794,7 @@ textarea {
 .founder__image {
   width: 219px;
   height: 262px;
+  flex-shrink: 0;
 }
 
 .founder__info {
