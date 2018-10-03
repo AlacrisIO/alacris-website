@@ -17,6 +17,8 @@ html {
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
 }
 
 /*
@@ -28,6 +30,7 @@ html {
  *
  * Customize the background color to match your design.
  */
+
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -203,30 +206,34 @@ textarea {
   opacity: 0.6;
 }
 
+
+
 .twitter-icon {
-  background-image: url(../img/icons/twitter.png);
+  background-image: url(../img/optimized/icons/twitter.png);
   width: 20px;
   height: 23px;
   margin-top: 2px;
 }
 
 .twitter-icon:after {
-  background-image: url(../img/icons/twitter_hover.png);
+  background-image: url(../img/optimized/icons/twitter_hover.png);
 }
 
 .twitter-icon:hover {
-  background-image: url(../img/icons/twitter_hover.png);
+  background-image: url(../img/optimized/icons/twitter_hover.png);
 }
 
+
+
 .linkedin-icon {
-  background-image: url(../img/icons/linkedin.png);
+  background-image: url(../img/optimized/icons/linkedin.png);
   width: 19px;
   height: 22px;
 }
 
 .linkedin-icon:after {
   visibility: hidden;
-  background-image: url(../img/icons/linkedin.png);
+  background-image: url(../img/optimized/icons/linkedin.png);
   content: '';
   height: 0;
   width: 0;
@@ -235,7 +242,28 @@ textarea {
 }
 
 .linkedin-icon:hover {
-  background-image: url(../img/icons/linkedin_hover.png);
+  background-image: url(../img/optimized/icons/linkedin_hover.png);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .twitter-icon {
+    background-image: url(../img/icons/twitter.png);
+  }
+
+  .twitter-icon:hover,
+  .twitter-icon:after {
+    background-image: url(../img/icons/twitter_hover.png);
+  }
+
+  .linkedin-icon {
+    background-image: url(../img/icons/linkedin.png);
+  }
+
+  .linkedin-icon:hover,
+  .linkedin-icon:after {
+    background-image: url(../img/icons/linkedin_hover.png);
+  }
 }
 
 .socials-icon {
@@ -439,7 +467,16 @@ textarea {
   max-height: 56vw;
   height: auto;
   padding-bottom: 210px;
+  background-image: url(../img/optimized/bg/hero-bg.png)
 }
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .hero {
+  background-image: url(../img/bg/hero-bg.png)
+  }
+}
+
 
 .hero__container {
   display: flex;
@@ -606,7 +643,7 @@ textarea {
 .blockchain {
   padding: 270px 0 186.84px 0;
   margin-bottom: 50px;
-  background-image: url(../img/bg/blockchain-bg.png);
+  background-image: url(../img/optimized/bg/blockchain-bg.png);
   background-size: auto 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -615,6 +652,13 @@ textarea {
 @media (min-width: 1500px) {
   .blockchain {
     background-size: 100% 100%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .blockchain {
+  background-image: url(../img/bg/blockchain-bg.png);
   }
 }
 
@@ -733,11 +777,12 @@ textarea {
   display: flex;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11);
   border-radius: 8px;
+  height: 262px;
 }
 
 .founder__image {
-  width: 44.6%;
-  height: 100%;
+  width: 219px;
+  height: 262px;
 }
 
 .founder__info {
@@ -855,9 +900,7 @@ textarea {
   bottom: 20px;
 }
 
-.advisors__see-more {
-
-}
+.advisors__see-more {}
 
 /* CORE TEAM */
 
@@ -909,11 +952,18 @@ textarea {
 
 /*START ===== PARTNERS/INVESTORS ===== START*/
 .partners-investors {
-  background-image: url(../img/bg/partners-investors-bg.png);
+  background-image: url(../img/optimized/bg/partners-investors-bg.png);
   background-size: 100% 100%;
   background-position: center;
   padding: 64px 0 93px;
   margin-bottom: 70px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .partners-investors {
+  background-image: url(../img/bg/partners-investors-bg.png);
+  }
 }
 
 .partners-investors-list {
@@ -1106,10 +1156,12 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
+
 .popup-socials__item {
   margin-left: -9px;
   margin-right: -9px;
 }
+
 .popup__socials {
   list-style-type: none;
   display: flex;
@@ -1168,11 +1220,11 @@ textarea {
 }
 
 .popup__close:before {
-  transform:  translate(-10px, 14px) rotate(45deg);
+  transform: translate(-10px, 14px) rotate(45deg);
 }
 
 .popup__close:after {
-  transform: translate(-10px, 14px)  rotate(-45deg);
+  transform: translate(-10px, 14px) rotate(-45deg);
 
 }
 
@@ -1376,91 +1428,93 @@ textarea {
   .popup {
     width: 325px;
     padding-top: 19.95px;
-      padding-bottom: 20px;
+    padding-bottom: 20px;
 
 
-  }  
+  }
 
   .popup__content {
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  overflow: auto;
-  padding: 0 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    overflow: auto;
+    padding: 0 20px;
   }
 
   .popup__close {
     top: 0;
     right: -3px;
   }
-.popup__close:before,
+
+  .popup__close:before,
   .popup__close:after {
     width: 14px;
   }
 
   .popup__link {
     font-family: "Lucida Grande",
-    sans-serif;
+      sans-serif;
   }
 
   .popup__socials {
-      font-size: 16px;
-      line-height: 18px;
-      position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    position: relative;
   }
 
   .popup__image,
   .popup__image-wrapper {
-      height: 150px;
-      width: 115px;
-      border-radius: 8px;
+    height: 150px;
+    width: 115px;
+    border-radius: 8px;
   }
 
 
   .popup__name {
-      font-size: 14px;
-      line-height: 18px;
-      text-align: center;
-      margin-top: 9px;
-      margin-bottom: 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 9px;
+    margin-bottom: 0;
   }
 
   .popup__position {
-      font-size: 14px;
-      font-style: italic;
-      line-height: 17px;
-      text-align: center;
-      margin-top: 7.5px;
-      margin-bottom: 0;
-    }
-
-    .popup__cv {
-      margin-top: 7px;
-      margin-bottom: 0;
-    }
-
-    .popup__info {
-      height: 100%;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .popup__bottom {
-      position: relative;
-      margin-top: 14px;
-      bottom: 0;
-      flex-shrink: 0;
-    }
+    font-size: 14px;
+    font-style: italic;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 7.5px;
+    margin-bottom: 0;
   }
+
+  .popup__cv {
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
+
+  .popup__info {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .popup__bottom {
+    position: relative;
+    margin-top: 14px;
+    bottom: 0;
+    flex-shrink: 0;
+  }
+}
 
 
 @media (max-width: 767px) {
- 
+
   .advisor__position_nowrap {
-   white-space: nowrap;
- }
+    white-space: nowrap;
+  }
 
   .header-nav {
     display: none;
@@ -1783,7 +1837,7 @@ textarea {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    
+
   }
 
 
