@@ -1102,7 +1102,7 @@ textarea {
 .popup__bottom {
   position: absolute;
   bottom: 32px;
-  width: 100%;
+  width: calc(100% - 64px);
   display: flex;
   justify-content: space-between;
 }

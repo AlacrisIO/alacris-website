@@ -1,6 +1,11 @@
 {
-    "icons": [{
-        "src": "icon.png",
+    "name": "Alacris",
+    "short_name": "Alacris",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Alacris description",
+    "icons": [            {
+        "src": "icon-192*192.png",
         "sizes": "192x192",
         "type": "image/png"
     }],
