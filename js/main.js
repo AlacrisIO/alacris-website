@@ -11,12 +11,15 @@ $(function () {
   $(".mmenu-item__link").on("click", closeMenu)
 
   cutAdvisorsText()
-
+  highlightNavItems() 
 
   $(".advisors__see-more").on("click", openPopup)
   $(".popup__close, .popup__shadow").on("click", closePopup)
 
-  $(window).on("resize", cutAdvisorsText)
+  $(window)
+    .on("resize", cutAdvisorsText)
+    .on("scroll", highlightNavItems)
+
 })
 
 function enableAnimations() {
@@ -44,6 +47,8 @@ function openMenu() {
 }
 
 function closeMenu() {
+  $(".mmenu-item__link").removeClass("active");
+  $(this).addClass("active");
   $(".mmenu__list").fadeOut();
   $(".header").css("background", "rgba(255, 255, 255, .63)")
   $(".hamburger").removeClass("active");
@@ -82,7 +87,8 @@ function cutAdvisorsText() {
     var $advisorCv = $(this).find(".advisor__cv");
 
     if (!advisorsCvIsCutted) {
-      $(this).attr("data-full-text", $advisorCv.html())    }
+      $(this).attr("data-full-text", $advisorCv.html())
+    }
 
     var shortTextMd = $(this).data("short-text-md");
     var shortTextSm = $(this).data("short-text-sm");
@@ -96,4 +102,38 @@ function cutAdvisorsText() {
 
   })
   advisorsCvIsCutted = true;
+}
+
+function highlightNavItems() {
+  var windowScrolled = $(window).scrollTop();
+
+  var homeTop = 0;
+  var benefitsTop = $('#Benefits').offset().top;
+  var ourTeamTop = $('#OurTeam').offset().top;
+  var partnersTop = $('#Partners').offset().top;
+  var contactUsTop = $('#ContactUs').offset().top;
+
+  var benefitsOffsetTop = benefitsTop - (benefitsTop - homeTop) * 0.3
+  var ourTeamOffsetTop = ourTeamTop - (ourTeamTop - benefitsTop) * 0.3
+  var partnersOffsetTop = partnersTop - (partnersTop - ourTeamTop) * 0.3
+  var contactUsOffsetTop = contactUsTop - (contactUsTop - partnersTop) * 0.3
+
+
+
+  if (windowScrolled >= homeTop && windowScrolled < benefitsOffsetTop * 0.7) {
+    $('.mmenu-item__link ,.header-nav-item__link').removeClass('active')
+    $('.mmenu-item__link:first ,.header-nav-item__link:first').addClass('active')
+  } else if (windowScrolled >= benefitsOffsetTop && windowScrolled < ourTeamOffsetTop) {
+    $('.mmenu-item__link ,.header-nav-item__link').removeClass('active')
+    $('.mmenu-item__link:eq( 1 ) ,.header-nav-item__link:eq( 1 )').addClass('active')
+  } else if (windowScrolled >= ourTeamOffsetTop && windowScrolled < partnersOffsetTop) {
+    $('.mmenu-item__link ,.header-nav-item__link').removeClass('active')
+    $('.mmenu-item__link:eq( 2 ) ,.header-nav-item__link:eq( 2 )').addClass('active')
+  } else if (windowScrolled >= partnersOffsetTop && windowScrolled < contactUsOffsetTop) {
+    $('.mmenu-item__link ,.header-nav-item__link').removeClass('active')
+    $('.mmenu-item__link:eq( 3 ) ,.header-nav-item__link:eq( 3 )').addClass('active')
+  } else if (windowScrolled >= contactUsOffsetTop) {
+    $('.mmenu-item__link ,.header-nav-item__link').removeClass('active')
+    $('.mmenu-item__link:eq( 4 ) ,.header-nav-item__link:eq( 4 )').addClass('active')
+  }
 }
