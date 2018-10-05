@@ -356,7 +356,15 @@ textarea {
 .hamburger.active:after {
   transform: rotate(-45deg);
   width: 20px;
+}
 
+.cached-image {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
 }
 
 /*END ===== GENERAL REPEATING RULES ===== END*/
@@ -2086,5 +2094,4 @@ textarea {
   font-family: "Lucida Grande";
   src: url("../fonts/lucida-grande.woff2") format("woff2"),
     url("../fonts/lucida-grande.woff") format("woff");
-  font-weight: bold;
 }

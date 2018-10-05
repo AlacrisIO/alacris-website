@@ -67,12 +67,12 @@ function openPopup() {
   var position = $advisor.find(".advisor__position").html();
   var socials = $advisor.find(".advisors__socials").html().replace(/advisors/g, 'popup');
 
-  $(".popup__name").html(name);
-  $(".popup__position").html(position);
-  $(".popup__cv").html(cv);
-  $(".popup__socials").html(socials);
-  $(".popup__image").attr('src', imageSrc);
-  $(".popup__link").attr("href", webLinkHref).html(webLinkHtml);
+  name ? $(".popup__name").html(name) : $(".popup__name").html("");
+  position ? $(".popup__position").html(position) : $(".popup__position").html("");
+  cv ? $(".popup__cv").html(cv) : $(".popup__cv").html("");
+  socials ? $(".popup__socials").html(socials) : $(".popup__socials").html("");
+  imageSrc ? $(".popup__image").attr('src', imageSrc) : $(".popup__image").attr('src', "");
+  webLinkHtml ? $(".popup__link").attr("href", webLinkHref).html(webLinkHtml) : $(".popup__link").attr("href", "").html("");
 
   $(".popup, .popup__shadow").fadeIn();
 }
