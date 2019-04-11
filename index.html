@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300i,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link href="https://fastcdn.org/Lightbox/2.8.1/css/lightbox.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -32,55 +33,48 @@
   <h1 class="visuallyhidden">Alacris Protocol</h1>
   <header class="header">
     <ul class="mmenu__list">
+    <!--  <li class="mmenu__item mmenu-item">
+        <a href="#Home" class="mmenu-item__link">Alacris Operating System</a>
+      </li>-->
       <li class="mmenu__item mmenu-item">
-        <a href="#Home" class="mmenu-item__link">Home</a>
+        <a href="#about-us" class="mmenu-item__link">About us</a>
       </li>
       <li class="mmenu__item mmenu-item">
-        <a href="#Benefits" class="mmenu-item__link">Benefits</a>
+        <a href="#partners" class="mmenu-item__link">Partners</a>
       </li>
       <li class="mmenu__item mmenu-item">
-        <a href="#OurTeam" class="mmenu-item__link">Our team</a>
+        <a href="#caseStudy" class="mmenu-item__link">Case Study</a>
       </li>
       <li class="mmenu__item mmenu-item">
-        <a href="#Partners" class="mmenu-item__link">Partners</a>
-      </li>
-      <li class="mmenu__item mmenu-item">
-        <a href="#ContactUs" class="mmenu-item__link">Contact us</a>
-      </li>
-      <li class="mmenu__item mmenu-item">
-        <a href="https://medium.com/alacris" target="_blank" class="mmenu-item__link">Blog</a>
+        <a href="#ourBlog" class="mmenu-item__link">Blog</a>
       </li>
     </ul>
     <div class="container">
       <div class="row header__row justify-content-between align-items-center">
-        <div class="hidden-sm col-xs-auto">
+        <div class="hidden-sm col-xs-auto header__hamburger-mob">
           <div class="hamburger header__hamburger">
             <div class="hamburger__inner"></div>
           </div>
         </div>
-        <div class="col-md-2 col-auto header-logo__wrapper">
-          <img src="img/optimized/logo/header__logo.png" srcset="img/logo/header__logo.png 2x" alt="Alacris" class="header__logo header-logo">
+        <div class="col-md-3 col-auto header-logo__wrapper">
+          <a href="#Home">
+            <img src="img/optimized/logo/header__logo.png" srcset="img/logo/header__logo.png 2x" alt="Alacris" class="header__logo header-logo">
+          </a>
         </div>
-        <div class="col-lg-7 col-md-10 col-auto">
+        <div class="col-lg-5 col-md-8 col-auto">
           <nav class="header__nav header-nav">
             <ul class="header-nav__list">
               <li class="header-nav__item header-nav-item">
-                <a tabindex="1" href="#Home" class="header-nav-item__link">Home</a>
+                <a tabindex="1" href="#about-us" class="header-nav-item__link">About us</a>
               </li>
               <li class="header-nav__item header-nav-item">
-                <a tabindex="2" href="#Benefits" class="header-nav-item__link">Benefits</a>
+                <a tabindex="2" href="#Benefits" class="header-nav-item__link">Partners</a>
               </li>
               <li class="header-nav__item header-nav-item">
-                <a tabindex="3" href="#OurTeam" class="header-nav-item__link">Our team</a>
+                <a tabindex="3" href="#caseStudy" class="header-nav-item__link">Case Study</a>
               </li>
               <li class="header-nav__item header-nav-item">
-                <a tabindex="4" href="#Partners" class="header-nav-item__link">Partners</a>
-              </li>
-              <li class="header-nav__item header-nav-item">
-                <a tabindex="5" href="#ContactUs" class="header-nav-item__link">Contact us</a>
-              </li>
-              <li class="header-nav__item header-nav-item">
-                <a tabindex="5" href="https://medium.com/alacris" target="_blank" class="header-nav-item__link">Blog</a>
+                <a tabindex="4" href="#ourBlog" target="_blank" class=" header-nav-item__link">Blog</a>
               </li>
               <li class="header-nav__item header-nav-item header-nav-item_telegram">
                 <a href="https://t.me/alacrisio" target="_blank" class="header-nav-item-link_telegram"></a>
@@ -90,440 +84,349 @@
           <a href="https://t.me/alacrisio" target="_blank" class="header-nav__telegram telegram-icon header-nav__telegram_mobile"></a>
         </div>
       </div>
+    </div>
   </header>
   <section id="Home" class="hero">
     <div class="container hero__container">
       <img src="img/optimized/logo/hero__logo.png" srcset="img/logo/hero__logo.png 2x" alt="Alacris" class="hero__logo">
-      <h2 class="h2 uppercase hero__title"><span class="hero-title__span">Making your </span><span class="hero-title__span">blockchain
-          application</span><span class="hero-title__span">
-          fast, secure and accessible.</span></h2>
-      <a target="_blank" href="https://alacris.typeform.com/to/x06duY" class="btn hero__btn">Contact Us</a>
+      <h2 class="h2 uppercase hero__title">
+	      <span class="hero-title__span">The Operating System for <br> All Blockchains</span>
+      </h2>
+      <a target="_blank" href="https://t.me/alacrisio" class="btn hero__btn">Follow us on Telegram</a>
+    </div>
   </section>
   <section class="description">
     <div class="container description__container">
+      <h3 id="about-us" class="title system__title">About us</h3>
       <div class="row description__row">
-        <div class="col-lg-5 offset-lg-1">
-          <h3 class="h3 description__title description-title">
-            <span class="description-title__span description-title__span_gray">Alacris is a Layer 2 </span>
-            <span class="description-title__span">Operating System</span>
-            <span class="description-title__span description-title__span_gray">for the blockchain.</span>
-          </h3>
-        </div>
-        <div class="col-lg-5">
-          <p class="description__text">It provides unlimited scalability, formalized security, automatic fraud
-            detection and
-            recovery, as well as bridges to layer 1 protocols. It abstracts away all infrastructure concerns away from
-            the
-            DApp
-            developers so they can focus on building the applications.</p>
-        </div>
+          <div class="description__system">
+            <p class="description__text-bold">Today’s problem with blockchain is that nobody actually “uses” blockchain.
+               How do we get more users onto blockchain?
+            </p>
+            <p class="description__text-bolder">
+              Alacris OS is a blockchain agnostic platform that
+              turns any developer into a blockchain developer.
+            </p>
+          </div>
+          <ul class="description__list">
+            <li class="description__card description__card-pinky">
+              <img class="description__card-absolute" src="img/operating_system/blockchain.png" alt="">
+              <span class="description__card-span">Today’s hurdles to build on blockchain:</span>
+              <ul class="description-card__list">
+                <li class="description-card__list-item">It’s hard</li>
+                <li class="description-card__list-item">Platform selection can be confusing</li>
+                <li class="description-card__list-item">It is very risky to deploy DApps</li>
+              </ul>
+            </li>
+            <li class="description__card description__card-green">
+              <img class="description__card-absolute" src="img/operating_system/alacris_green.png" alt="">
+              <span class="description__card-span">Alacris solves for four critical problems developers face:</span>
+              <ul class="description-card__list">
+                <li class="description-card__list-item">Ease of Development </li>
+                <li class="description-card__list-item">Speed to Market</li>
+                <li class="description-card__list-item">Flexibility</li>
+                <li class="description-card__list-item">Security</li>
+              </ul>
+            </li>
+          </ul>
       </div>
     </div>
-
   </section>
+
   <section id="Benefits" class="benefits">
     <div class="container benefits__container">
       <div class="benefits__content">
-        <h3 class="title benefits__title">Benefits</h3>
+        <h3 id="partners" class="title benefits__title partners__title">Partners</h3>
         <div class="benefits__card shadow-card benefits-card">
           <div class="benefits-card__info benefits-card-info">
-            <h4 class="benefits-card-info__title">Ease of Development</h4>
-            <p class="benefits-card-info__text">Simplified development platform that abstracts scaling and security and
-              provides
-              tooling and framework to make it easier to develop on the blockchain you choose.</p>
-          </div>
-          <img src="img/optimized/icons/cake.png" alt="Cake" srcset="img/icons/cake.png 2x" class="benefits-card__image benefits-card__image_cake">
-        </div>
-        <div class="benefits__card shadow-card benefits-card">
-          <div class="benefits-card__info benefits-card-info">
-            <h4 class="benefits-card-info__title">Speed</h4>
-            <p class="benefits-card-info__text">Transaction confirmation within seconds with 100,000 transactions per
-              second per Alacris Node.</p>
-          </div>
-          <img src="img/optimized/icons/speed.png" alt="speed" srcset="img/icons/speed.png 2x" class="benefits-card__image benefits-card__image_speed">
-        </div>
-        <div class="benefits__card shadow-card benefits-card">
-          <div class="benefits-card__info benefits-card__info_security benefits-card-info">
-            <h4 class="benefits-card-info__title">Security</h4>
+            <h4 class="benefits-card-info__title">Nervos</h4>
             <p class="benefits-card-info__text">
-              Formally verified workflows for extra security.
-            </p>
+              Nervos Network tackles the scalability trilemma by separating state
+              generation and state verification/storage in a layered architecture.</p>
           </div>
-          <img src="img/optimized/icons/security.png" alt="security" srcset="img/icons/security.png 2x" class="benefits-card__image benefits-card__image_security">
+          <img src="img/partners/nervos-logo.png"
+               alt="Nervos"
+               class="benefits-card__image benefits-card__image_cake">
+        </div>
+        <div class="benefits__card shadow-card benefits-card">
+          <div class="benefits-card__info benefits-card-info">
+            <h4 class="benefits-card-info__title">1Kx</h4>
+            <p class="benefits-card-info__text">
+              Blockchains enable us to enforce scarcity and facilitate
+              value transfer in areas where that would otherwise be impossible and, therefore,
+              radically expand the range of problems to which economic incentives can successfully be applied.</p>
+          </div>
+          <img src="img/partners/1kx.png" alt="1kx"
+               class="benefits-card__image benefits-card__image_speed">
         </div>
       </div>
     </div>
   </section>
-  <section class="blockchain">
+
+  <section id="OurTeam" class="blockchain">
     <div class="container">
       <h3 class="title blockchain__title">
-        Blockchain is the future
+        Our Team
       </h3>
-      <h4 class="blockchain__subtitle"><span class="blockchain-subtitle__span">but not until we </span><span class="blockchain-subtitle__span">overcome
-          key <strong class="blockchain__subtitle_strong">challenges</strong></span></h4>
+      <p class="our-team__description">
+        Alacris is built by a diverse team focused on building effective and efficient,
+        decentralized technology to truly impact blockchain adoption and practicality for all developers.
+        We have years of industry experience in engineering, research, and product development, communications,
+        that include tech and organizations including the University of Massachusetts-Lowell, Google, Lincoln Labs,
+        NOAA, The National Science Foundation, MIT, Bridgewater and Activision Blizzard.
+      </p>
       <div class="row">
-        <div class="col-sm-10 offset-sm-1">
-          <div class="blockchain__cards">
-            <div class="blockchain__card blockchain-card">
-              <img src="img/optimized/icons/calendar.png" alt="Calendar" srcset="img/icons/calendar.png 2x" class="blockchain-card__image">
-              <h5 class="blockchain-card__title">Slow Confirmation Times</h5>
-              <p class="blockchain-card__text">Current transaction confirmation is measured in 10s of minutes</p>
-            </div>
-            <div class="blockchain__card blockchain-card">
-              <img src="img/optimized/icons/snail.png" alt="Snail" srcset="img/icons/snail.png 2x" class="blockchain-card__image">
-              <h5 class="blockchain-card__title">Low Throughput</h5>
-              <p class="blockchain-card__text">Currently measured in 10s of transactions per second</p>
-            </div>
-            <div class="blockchain__card blockchain-card">
-              <img src="img/optimized/icons/password.png" alt="Password" srcset="img/icons/password.png 2x" class="blockchain-card__image">
-              <h5 class="blockchain-card__title">Security Liability</h5>
-              <p class="blockchain-card__text">Currently $100s of millions of dollars lost because of development errors every year</p>
-            </div>
-          </div>
+        <div class="team_container offset-sm-1">
+          <ul class="team__list">
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Chris_Swenor.png" alt="">
+              </div>
+              <strong class="team__list-name">Chris Swenor</strong>
+              <em class="team__list-position">CEO, CO-Founder</em>
+              <p class="team__list-description">
+                Over 15  years managing and leading teams around the world, Mentor at HBS</p>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Francois-Rene_Rideau.png" alt="">
+              </div>
+              <strong class="team__list-name">Francois-Rene Rideau</strong>
+              <em class="team__list-position">Chief Architect, CO-Founder</em>
+              <p class="team__list-description">
+                Over 20 years of building some of the most sophisticated distributed
+                systems in the world
+              </p>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Jay_McCarthy.png" alt="">
+              </div>
+              <strong class="team__list-name">Jay McCarthy</strong>
+              <em class="team__list-position">Head of Research</em>
+              <p class="team__list-description">
+                Associate Professor at UMass Lowell, PLT Research Group,
+                PhD Brown University</p>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Steve_Derezinski.png" alt="">
+              </div>
+              <strong class="team__list-name">Steve Derezinski</strong>
+              <em class="team__list-position">Head of Corporate Development</em>
+              <p class="team__list-description">Senior Technology Executive/Founder/CEO to many technology startups,
+                                                MIT Engineer & MBA</p>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Sudhakar_Kaushik.png" alt="">
+              </div>
+              <strong class="team__list-name">Sudhakar Kaushik</strong>
+              <em class="team__list-position">Head of Product</em>
+              <p class="team__list-description">
+                Product Leadership expertise including  Go-to-Market,
+                SaaS, UX at global corporations & startups</p>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Amy-Lynch.png" alt="">
+              </div>
+              <strong class="team__list-name">Amy Lynch</strong>
+              <em class="team__list-position">Head of Communications</em>
+              <p class="team__list-description">More than 15 years of communications experience,
+                                                MS in Strategic Communications</p>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/JR-Howard.png" alt="">
+              </div>
+              <strong class="team__list-name">JR Howard</strong>
+              <em class="team__list-position">CFO</em>
+              <p class="team__list-description">
+                35 years experience as a CPA & CFO, specializing in startups with 10 successful acquisitions</p>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Andrew_Bull.png" alt="">
+              </div>
+              <strong class="team__list-name">Andrew Bull</strong>
+              <em class="team__list-position">Legal Counsel</em>
+              <p class="team__list-description">
+                Founder and CEO of Bull Blockchain Law, LLC, Philadelphia's First Blockchain</p>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Mathieu_Dutour_Sikirić.png" alt="">
+              </div>
+              <strong class="team__list-name">Mathieu Dutour Sikirić</strong>
+              <em class="team__list-position">Engineer</em>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Matt_Audesse.png" alt="">
+              </div>
+              <strong class="team__list-name">Matt Audesse</strong>
+              <em class="team__list-position">Engineer</em>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-img">
+                <img class="" src="img/team/Luka_Defar.png" alt="">
+              </div>
+              <strong class="team__list-name">Luka Defar</strong>
+              <em class="team__list-position">Engineer</em>
+            </li>
+          </ul>
+	        <button id="showAll" class="team__btn btn">show all</button>
+	        <button id="showLess" class="team__btn btn">show less</button>
         </div>
       </div>
+    </div>
   </section>
-  <section id="OurTeam" class="who-we-are">
+  <section  class="who-we-are">
     <div class="container">
-      <h3 class="title who-we-are__title">Who We Are</h3>
-      <section class="who-we-are__founders founders">
-        <h4 class="who-we-are__subtitle founders__title">Founders</h4>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-auto">
-            <div class="founders__card founder">
-              <img src="img/optimized/team/Chris-Swenor.png" srcset="img/team/Chris-Swenor.png 2x" alt="Chris Swenor"
-                class="founder__image">
-              <div class="founder__info">
-                <p class="founder__name">
-                  Chris Swenor
-                </p>
-                <p class="founder__position">CEO</p>
-                <p class="founder__cv">
-                  Chris has an extensive background in the tech space with more than 18 years of experience, which includes leadership positions in multiple successful exits. Prior to co-founding Alacris, Chris founded a 20 member team of consultants specializing in growth-stage startups, which became East Coast Products. He also focuses his time as an advisor at Harvard Business School, Resilient Coders and Techstars.
-                </p>
-                <ul class="founder__socials founder-socials">
-                  <li class="founder-socials-item">
-                    <a href="https://twitter.com/chrisswenor" target="_blank" class="founder-socials-item__twitter socials-icon twitter-icon"></a></li>
-                  <li class="founder-socials-item">
-                    <a href="https://www.linkedin.com/in/chrisswenor/" target="_blank" class="founder-socials-item__linkedin socials-icon linkedin-icon"></a></li>
-
-                </ul>
-              </div>
+      <h3 class="title who-we-are__title">our advisors</h3>
+      <section class="advisors">
+        <ul class="advisors__list">
+          <li class="advisors__list-item">
+            <div class="advisors__list-img">
+              <img class="" src="img/team/Jan_Xie.png" alt="">
             </div>
-          </div>
-          <div class="col-lg-6 col-auto">
-            <div class="founders__card founder">
-              <img src="img/optimized/team/Francois-Rene-Rideau.png" srcset="img/team/Francois-Rene-Rideau.png" alt="Francois-Rene Rideau"
-                class="founder__image">
-              <div class="founder__info">
-                <p class="founder__name">
-                  Francois-Rene Rideau
-                </p>
-                <p class="founder__position">Chief Architect</p>
-                <p class="founder__cv">
-                  François-René Rideau is an alumnus of the École Normale Supérieure (rue d’Ulm). He has a background
-                  as a
-                  Researcher in
-                  Computer Science (Programming Language Semantics and Distributed Systems). Formerly a Software
-                  Engineer at
-                  IDEALX, ITA
-                  Software, Google, and Bridgewater Associates, he is also an early member of the Tezos community.
-                </p>
-                <ul class="founder__socials founder-socials">
-                  <li class="founder-socials-item">
-                    <a href="https://twitter.com/fare" target="_blank" class="founder-socials-item__twitter socials-icon twitter-icon"></a>
-                  </li>
-                  <li class="founder-socials-item">
-                    <a href="https://www.linkedin.com/in/fahree/" target="_blank" class="founder-socials-item__linkedin socials-icon linkedin-icon"></a>
-                  </li>
-                </ul>
-              </div>
+            <strong class="advisors__list-name">Jan Xie</strong>
+            <a href="https://www.nervos.org/" target="_blank" class="advisors__list-link">www.nervos.org</a>
+            <p class="advisors__list-position">
+              Founder at Cryptape and Nervos, former researcher & developer
+              at the Ethereum Foundation focused on Casper & Sharding
+            </p>
+          </li>
+          <li class="advisors__list-item">
+            <div class="advisors__list-img">
+              <img class="" src="img/team/Nada_Amin.png" alt="">
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="core-team">
-        <h4 class="who-we-are__subtitle core-team__title">Core Team</h4>
-        <ul class="core-team__members-list">
-          <li class="core-team__member core-team-member">
-            <img src="img/optimized/team/Alex-Coventry.png" alt="Alex Coventry" srcset="img/team/Alex-Coventry.png 2x"
-              class="core-team-member__image">
-
-            <p class="core-team-member__name">Alex Coventry</p>
-            <p class="core-team-member__position">Software Engineer</p>
+            <strong class="advisors__list-name">Nada Amin</strong>
+            <a href="http://lampwww.epfl.ch/~amin/cv/" target="_blank" class="advisors__list-link">lampwww.epfl.ch/~amin/cv/</a>
+            <p class="advisors__list-position">
+              University Lecturer in Programming Languages at
+              University of Cambridge, UK</p>
           </li>
-          <li class="core-team__member core-team-member">
-            <picture>
-
-            </picture>
-            <img src="img/optimized/team/Vedran-Lebo.png" alt="Verdan Lebo" srcset="img/team/Vedran-Lebo.png 2x" class="core-team-member__image">
-            <p class="core-team-member__name">Vedran Lebo</p>
-            <p class="core-team-member__position">Software Engineer</p>
+          <li class="advisors__list-item">
+            <div class="advisors__list-img">
+              <img class="" src="img/team/Thomas-Hardjono.png" alt="">
+            </div>
+            <strong class="advisors__list-name">Thomas Hardjono</strong>
+            <a href="https://hardjono.mit.edu/" target="_blank" class="advisors__list-link">hardjono.mit.edu/</a>
+            <p class="advisors__list-position">Technical Director at MIT Internet Trust Consortium</p>
           </li>
-          <li class="core-team__member core-team-member">
-            <picture>
-
-            </picture>
-            <img src="img/optimized/team/JR-Howard.png" alt="Jr Howard" srcset="img/team/JR-Howard.png 2x" class="core-team-member__image">
-            <p class="core-team-member__name">Jr Howard</p>
-            <p class="core-team-member__position">CFO</p>
+          <li class="advisors__list-item">
+            <div class="advisors__list-img">
+              <img class="" src="img/team/Rick_Dudley.png" alt="">
+            </div>
+            <strong class="advisors__list-name">Rick Dudley</strong>
+            <a href="https://www.linkedin.com/in/afdudley/" target="_blank" class="advisors__list-link">/www.linkedin
+                                                                                         .com/in/afdudley/</a>
+            <p class="advisors__list-position">President and System Architect, Vulcanize, Inc.</p>
           </li>
-          <li class="core-team__member core-team-member">
-            <picture>
-
-            </picture>
-            <img src="img/optimized/team/Amy-Lynch.png" alt="Amy Lynch" srcset="img/team/Amy-Lynch.png 2x" class="core-team-member__image">
-            <p class="core-team-member__name">Amy Lynch</p>
-            <p class="core-team-member__position">Communications</p>
+          <li class="advisors__list-item">
+            <div class="advisors__list-img">
+              <img class="" src="img/team/Max_Faindezicht.png" alt="">
+            </div>
+            <strong class="advisors__list-name">Max Faingezicht</strong>
+            <a href="https://www.linkedin.com/in/maxcr/" target="_blank" class="advisors__list-link">www.linkedin.com/in/maxcr/</a>
+            <p class="advisors__list-position">
+              Senior Technology Executive/Founder/CEO to many technology startups,
+              MIT Engineer & MBA</p>
           </li>
         </ul>
       </section>
-      <section class="advisors">
-        <h4 class="who-we-are__subtitle advisors__title">Advisors</h4>
-
-        <div class="row justify-content-center justify-content-lg-start">
-          <div class="col-lg-6 col-auto">
-            <div data-popup-photo-src="img/popup/Max-Faingezicht_popup.png" data-short-text-sm="Max is the Chief Technology Officer of ThriveHive, where they empower local business owners to take charge of their
-            business growth…"
-              data-short-text-md="Max is the Chief Technology Officer of ThriveHive, where they empower local
-            business
-            owners to
-            take charge of their business grow justify-content-center justify-content-lg-startth combining
-            human..."
-              class="advisors__card advisor">
-              <div class="advisor-image__wrapper">
-                <img src="img/optimized/team/Max-Faingezicht.png" alt="Max Faingezicht" srcset="img/team/Max-Faingezicht.png 2x"
-                  class="advisor__image">
-              </div>
-              <div class="advisor__info">
-                <div class="advisor__name-position-wrapper">
-                  <p class="advisor__name">Max Faingezicht</p>
-                  <p class="advisor__position">CTO, ThriveHive</p>
-                </div>
-                <p class="advisor__cv">Max is the Chief Technology Officer of ThriveHive, where they empower local business owners to take charge of their
-                business growth, combining human guidance with easy-to-use technology to make marketing simple, effective, and
-                affordable for small and mid-sized businesses.
-                <br>
-                <br>
-                Max joined the company in March 2016 via the acquisition of his startup, where he was Co-Founder and CEO. Max is a
-                former small business owner who has worked as a product manager intern for the Kindle team at Amazon and has held
-                engineering roles in industrial automation and artificial intelligence research. Max is passionate about empowering
-                others through data-driven marketing technology. Max holds a BSEE from the University of Costa Rica and an MBA with a
-                certificate for Innovation and Entrepreneurship from MIT Sloan.
-
-                </p>
-                <p class="see-more advisors__see-more">See more</p>
-
-                <ul class="advisors__socials advisors-socials">
-                  <li class="advisors-socials__item">
-                    <a href="https://www.linkedin.com/in/maxcr/" target="_blank" class="advisors-socials__item_linkedin socials-icon linkedin-icon "></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-auto">
-            <div data-popup-photo-src="img/popup/Thomas-Hardjono_popup.png" data-short-text-sm="Thomas Hardjono is the CTO of MIT Connection Science and Technical Director …"
-              data-short-text-md="Thomas Hardjono is the CTO of MIT Connection Science and Technical Director of
-            the
-            MIT
-            Trust::Data Consortium. Passionate about. Internet infrastructure..."
-              class="advisors__card advisor">
-              <div class="advisor-image__wrapper">
-                <img src="img/optimized/team/Thomas-Hardjono.png" alt="Thomas Hadjono" srcset="img/team/Thomas-Hardjono.png 2x"
-                  class="advisor__image">
-              </div>
-              <div class="advisor__info">
-                <div class="advisor__name-position-wrapper">
-                  <p class="advisor__name">Thomas Hardjono</p>
-                  <p class="advisor__position">Technical Director at MIT Internet Trust Consortium</p>
-                </div>
-                <p class="advisor__cv">Thomas Hardjono is the CTO of MIT Connection Science and Technical Director of the MIT Trust::Data Consortium.
-                Passionate about the Internet infrastructure, equitable access and open source, he devoted several years at MIT running
-                the MIT Kerberos Consortium. Prior to this he was a Distinguished Engineer at Bay Networks, Principal Scientist at
-                VeriSign PKI, and held CTO roles at several start-ups. With a background in cryptography, for the past two decades
-                Thomas has been at the forefront of several identity, trust and cybersecurity initiatives in industry, ranging from
-                network multicast security, IoT Security, trusted computing to scalable identity systems and interoperable blockchains.
-                Thomas has authored several technical papers, patents and books covering cryptography, networking, identity and
-                blockchain security
-                </p>
-                <p class="see-more advisors__see-more">See more</p>
-
-                <ul class="advisors__socials advisors-socials">
-                  <li class="advisors-socials__item">
-                    <a href="https://www.linkedin.com/in/hardjono/" target="_blank" class="advisors-socials__item_linkedin socials-icon linkedin-icon"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center justify-content-lg-start">
-          <div class="col-lg-6 col-auto">
-            <div data-weblink-html="www.strub.nu" data-weblink-href="http://www.strub.nu/" data-popup-photo-src="img/popup/Pierre-Yves_popup.png"
-              data-short-text-sm="Pierre-Yves is an Assistant Professor at Ecole Polytechnique. He received his …"
-              data-short-text-md="Pierre-Yves is an Assistant Professor at Ecole Polytechnique. He received his PhD
-            in
-            Computer
-            Science from the École Polytechnique, France, in 2008. In 2016.."
-              class="advisors__card advisor">
-              <div class="advisor-image__wrapper">
-                <img src="img/optimized/team/Pierre-Yves.png" alt="Pierre-Yves" srcset="img/team/Pierre-Yves.png 2x"
-                  class="advisor__image">
-              </div>
-              <div class="advisor__info">
-                <div class="advisor__name-position-wrapper">
-                  <p class="advisor__name">Pierre Yves</p>
-                  <p class="advisor__position">Maître de conférences at Ecole Polytechnique</p>
-                </div>
-                <p class="advisor__cv">Pierre-Yves is an Assistant Professor at Ecole Polytechnique. He received his
-                  PhD in Computer Science from the École
-                  Polytechnique, France, in 2008. In 2016, he joined the Computer Science Department of the École
-                  Polytechnique
-                  (France). Prior, he was a researcher at the IMDEA Software Institute from 2013, after a post-doctoral
-                  position at the
-                  Microsoft-INRIA Joint Lab in Paris, France and at the LIAMA institute in Beijing, China. Pierre-Yves’
-                  research
-                  interests include formal proofs, proof assistants and their related type theory, certification of
-                  cryptographic
-                  algorithms, mathematical proofs, and program verification.
-                  <br>
-                  <br>
-                  He actively participates in the development of Coq proof assistant extensions and libraries and also
-                  focuses on the
-                  development of tools to develop secure implementations of cryptography. He is one of the main authors
-                  of the EasyCrypt
-                  proof assistant (a toolset for reasoning about relational properties of probabilistic computations
-                  with adversarial
-                  code) and of the Jasmin toolset (a framework for developing high-speed and high-assurance
-                  cryptographic software).
-
-                </p>
-                <p class="see-more advisors__see-more">See more</p>
-
-                <ul class="advisors__socials advisors-socials">
-                  <li class="advisors-socials__item">
-                    <a href="https://www.linkedin.com/in/pierre-yves-strub-9822506/" target="_blank" class="advisors-socials__item_linkedin socials-icon linkedin-icon"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-auto">
-            <div data-weblink-html="lampwww.epfl.ch/~amin/cv/" data-weblink-href="http://lampwww.epfl.ch/~amin/cv/" data-popup-photo-src="img/popup/Nada-Amin_popup.png" data-short-text-sm="Nada is a University Lecturer in Programming Languages at the University of Ca…"
-              data-short-text-md="Nada is a University Lecturer in Programming Languages at the University of
-            Cambridge
-            (UK) and a fellow of Jesus
-            College. Previously she was a member of..."
-              class="advisors__card advisor">
-              <div class="advisor-image__wrapper">
-                <img src="img/optimized/team/Nada-Amin.png" alt="Nama Amin" srcset="img/team/Nada-Amin.png 2x" class="advisor__image">
-              </div>
-              <div class="advisor__info">
-                <div class="advisor__name-position-wrapper">
-                  <p class="advisor__name">Nada Amin</p>
-                  <p class="advisor__position">University Lecturer in Programming Languages at University
-                    of Cambridge.</p>
-                </div>
-                <p class="advisor__cv">Nada is a University Lecturer in Programming Languages at the University of Cambridge (UK) and a fellow of Jesus
-                College. Previously, she was a member of the Scala team at EPFL, where she obtained her PhD. Previously, she worked at
-                Google in compiler infrastructure supporting Gmail and other Google applications. She holds bachelor of science and
-                master of engineering degrees from the Massachusetts Institute of Technology. Her expertise lies in meta-programming
-                techniques, applied to high-performance computing (POPL’13), verification (POPL’17) and reflection (POPL’18).
-                </p>
-                <p class="see-more advisors__see-more">See more</p>
-                <ul class="advisors__socials advisors-socials">
-                  <li class="advisors-socials__item">
-                    <a href="https://www.linkedin.com/in/mitnamin/" class="advisors-socials__item_linkedin socials-icon linkedin-icon"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-lg-start justify-content-center">
-          <div class="col-lg-6 col-auto">
-            <div data-popup-photo-src="img/popup/Rick-Dudley_popup.png" data-short-text-sm="Rick has over 15 years of experience as an architect and consultant, and has…"
-              data-short-text-md="Rick has over 15 years of experience as an architect and consultant, and has
-            created
-            several
-            well-known blockchain architectures since 2014. He specializes..."
-              class="advisors__card advisor">
-              <div class="advisor-image__wrapper">
-                <img src="img/optimized/team/Rick-Dudley.png" alt="Rick Dudley" srcset="img/team/Rick-Dudley.png 2x"
-                  class="advisor__image">
-              </div>
-              <div class="advisor__info">
-                <div class="advisor__name-position-wrapper">
-                  <p class="advisor__name">Rick Dudley</p>
-                  <p class="advisor__position advisor__position_nowrap">President and System Architect, Vulcanize, Inc</p>
-                </div>
-                <p class="advisor__cv">Rick has over 15 years of experience as an architect and consultant, and has created several well-known blockchain
-                architectures since 2014. He specializes in mechanism design with a focus on federated proof of stake consensus
-                systems. Many of his projects have also entailed components of cross chain asset exchange.
-                </p>
-                <p class="see-more advisors__see-more">See more</p>
-
-                <ul class="advisors__socials advisors-socials">
-                  <li class="advisors-socials__item">
-                    <a href="https://twitter.com/AFDudley0" target="_blank" class="advisors-socials__item_twitter socials-icon twitter-icon"></a></li>
-
-                  <li class="advisors-socials__item">
-                    <a href="https://www.linkedin.com/in/afdudley/
-" target="_blank" class="advisors-socials__item_linkedin socials-icon linkedin-icon"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-      </section>
     </div>
   </section>
-  <section id="Partners" class="partners-investors">
+
+  <section id="caseStudy" class="case-study">
     <div class="container">
-      <h3 class="title partnets-investors__title">Partners / Investors</h3>
-      <ul class="partners-investors__list partners-investors-list">
-        <li class="partners-investors-list__item partners-investors-list-item">
-          <img src="img/optimized/icons/DCU-FinTech-Logo.png" alt="DCU FinTech Logo" srcset="img/icons/DCU-FinTech-Logo.png 2x"
-            class="partners-investors-list-item__image partners-investors-list-item__image_dcu">
-        </li>
-        <li class="partners-investors-list__item partners-investors-list-item">
-          <img src="img/optimized/icons/legiLogic_logo.png" alt="LegiLogic Logo" srcset="img/icons/legiLogic_logo.png 2x"
-            class="partners-investors-list-item__image partners-investors-list-item__image_legilogic">
-        </li>
-        <li class="partners-investors-list__item partners-investors-list-item">
-          <img src="img/optimized/icons/nervos_logo.png" alt="Nervos" srcset="img/icons/nervos_logo.png 2x" class="partners-investors-list-item__image partners-investors-list-item__image_nervos">
-        </li>
-        <!-- <li class="partners-investors-list__item partners-investors-list-item">
-          <img src="img/optimized/icons/cmb_logo.png" alt="CMB Internetional" srcset="img/icons/cmb_logo.png 2x" class="partners-investors-list-item__image partners-investors-list-item__image_cmb">
-        </li> -->
+      <h3 class="title case-study__title">example case study</h3>
+      <ul class="case-study__list">
+        <li class="case-study__item">Fast Payment</li>
+        <li class="case-study__item">50% Less Time</li>
+        <li class="case-study__item">75% Fewer Resources</li>
+        <li class="case-study__item">Easier to Maintain</li>
+        <li class="case-study__item">Automatically Certified for Security</li>
+        <li class="case-study__item">No Platform Lock-in</li>
       </ul>
-    </div>
-  </section>
-  <section id="ContactUs" class="contact-us">
-    <div class="container  contact-us__container">
-      <h3 class="title contact-us__title">If you have any questions</h3>
-      <div class="contact-us__content">
-        <div class="shadow-card shadow-card_hidden"></div>
-        <div class="shadow-card contact-us-card">
-          <img src="img/optimized/icons/email.png" srcset="img/icons/email.png 2x" alt="envelope" class="contact-us__image">
-          <a target="_blank" href="https://alacris.typeform.com/to/x06duY" class="btn contact-us__button">Fill out the
-            Form</a>
-        </div>
+      <div class="case-study__example">
+        <span class="case-study__example-span">Alacris OS Development Process</span>
+        <a data-lightbox="roadtrip" href="img/example/example_1.png">
+          <img src="img/example/example_1.png" alt="">
+        </a>
+      </div>
+      <div class="case-study__example">
+        <span class="case-study__example-span">Alacris OS Compilation Process</span>
+        <a data-lightbox="roadtrip" href="img/example/example_2.png">
+          <img src="img/example/example_2.png" alt="">
+        </a>
       </div>
     </div>
   </section>
+
+
+  <section id="ourBlog" class="our-blog">
+    <h3 class="title our-blog__title">our blog</h3>
+    <div class="container">
+      <div class="our-blog__card shadow-card">
+        <div class="our-blog__medium">
+          <img src="img/icons/Blog.svg" alt="">
+        </div>
+        <a href="https://medium.com/alacris" target="_blank" class="btn our-blog__link">Go to Alacris Blog</a>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container footer__container">
-      <div class="footer__row row align-items-center justify-content-between">
+      <div class="footer__top row">
         <div class="col-auto">
-          <img src="img/optimized/logo/header__logo.png" srcset="img/logo/header__logo.png 2x" alt="Alacris logo" class="footer__logo">
+	        <a href="https://legilogic.com" target="_blank">
+		        <img src="img/example/legiLogc.png" alt="LegiLogic logo" class="footer__logo footer__logo_legiLogic">
+	        </a>
         </div>
+        <ul class="footer__top-list">
+          <li class="footer__top-item">
+            <a target="_blank" href="https://legilogic.workable.com/" class="footer__top-link" href="">Careers</a></li>
+          <li class="footer__top-item"><a class="footer__top-link" href="https://alacris.typeform.com/to/x06duY"
+                                          target="_blank"
+          >Email Us</a></li>
+        </ul>
+        <a href="" class="btn footer__top-email">Email Updates</a>
+	      <span class="footer__bottom-contact contact-mobile">Offices: 695 Atlantic Ave, Boston, Massachusetts US</span>
+      </div>
+      <div class="footer__bottom">
         <div class="col-auto">
-          <a href="https://t.me/alacrisio" target="_blank" class="footer__telegram"></a>
+          <a href="#Home">
+            <img src="img/optimized/logo/header__logo.png" srcset="img/logo/header__logo.png 2x" alt="Alacris logo" class="footer__logo">
+          </a>
         </div>
+        <span class="footer__bottom-contact contact-desktop">Offices: 695 Atlantic Ave, Boston, Massachusetts US</span>
+        <ul class="footer__bottom-social">
+          <li><a class="footer__bottom-item footer__bottom-item_medium"
+                 href="https://medium.com/alacris" target="_blank"></a></li>
+          <li><a class="footer__bottom-item footer__bottom-item_linkedin"
+                 href="https://www.linkedin.com/company/alacris-protocol" target="_blank"></a></li>
+          <li><a class="footer__bottom-item footer__bottom-item_twitter"
+                 href="https://twitter.com/alacrisos" target="_blank"></a></li>
+          <li><a class="footer__bottom-item footer__bottom-item_facebook"
+                 href="https://www.facebook.com/alacrisos/" target="_blank"></a></li>
+          <li><a class="footer__bottom-item footer__bottom-item_github"
+                 href="https://github.com/AlacrisIO" target="_blank"></a></li>
+          <li><a class="footer__bottom-item footer__bottom-item_telegram"
+                 href="https://t.me/alacrisio" target="_blank"></a></li>
+        </ul>
       </div>
     </div>
-    </div>
   </footer>
+
+  <!--<div class="col-auto">
+    <a href="https://t.me/alacrisio" target="_blank" class="footer__telegram"></a>
+  </div>-->
   <!-- POPUP MARKUP -->
+
   <div class="popup">
     <div class="popup__content">
       <div class="popup__image-wrapper">
@@ -552,6 +455,7 @@
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+  <script src="https://fastcdn.org/Lightbox/2.8.1/js/lightbox.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
 
