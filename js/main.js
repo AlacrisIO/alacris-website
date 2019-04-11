@@ -11,7 +11,7 @@ $(function () {
   $(".mmenu-item__link").on("click", closeMenu)
 
   cutAdvisorsText()
-  highlightNavItems() 
+  highlightNavItems()
 
   $(".advisors__see-more").on("click", openPopup)
   $(".popup__close, .popup__shadow").on("click", closePopup)
@@ -19,6 +19,8 @@ $(function () {
   $(window)
     .on("resize", cutAdvisorsText)
     .on("scroll", highlightNavItems)
+
+
 
 })
 
@@ -108,16 +110,16 @@ function highlightNavItems() {
   var windowScrolled = $(window).scrollTop();
 
   var homeTop = 0;
-  var benefitsTop = $('#Benefits').offset().top;
-  var ourTeamTop = $('#OurTeam').offset().top;
-  var partnersTop = $('#Partners').offset().top;
-  var contactUsTop = $('#ContactUs').offset().top;
+  var benefitsTop = $('#about-us').offset().top;
+  var ourTeamTop = $('#Benefits').offset().top;
+  var partnersTop = $('#caseStudy').offset().top;
+  var contactUsTop = $('#ourBlog').offset().top;
+  // console.log(benefitsTop, ourTeamTop, partnersTop, contactUsTop);
 
   var benefitsOffsetTop = benefitsTop - (benefitsTop - homeTop) * 0.3
   var ourTeamOffsetTop = ourTeamTop - (ourTeamTop - benefitsTop) * 0.3
   var partnersOffsetTop = partnersTop - (partnersTop - ourTeamTop) * 0.3
   var contactUsOffsetTop = contactUsTop - (contactUsTop - partnersTop) * 0.3
-
 
 
   if (windowScrolled >= homeTop && windowScrolled < benefitsOffsetTop * 0.7) {
@@ -137,3 +139,40 @@ function highlightNavItems() {
     $('.mmenu-item__link:eq( 4 ) ,.header-nav-item__link:eq( 4 )').addClass('active')
   }
 }
+$( document ).ready(function() {
+    function showTeam() {
+        if (screen.width < 421) {
+            $('#showLess').hide();
+            // $('#showAll').show();
+            $(".team__list li").slice(0, 4).show();
+            $("#showAll").on('click', function (e) {
+                e.preventDefault();
+                $(".team__list li:hidden").slice(0, 7).slideDown();
+
+                if ($(".team__list li:hidden").length == 0) {
+                    $('#showAll').hide();
+                    $('#showLess').show();
+                }
+            });
+            $('#showLess').on('click', function () {
+                $(".team__list li").slice(4, 11).slideUp();
+                $('#showAll').show();
+                $('#showLess').hide();
+            });
+        }
+    }
+
+    $(window).on("resize", function(event){
+        showTeam();
+        if (screen.width > 421) {
+            $(".team__list li").show();
+        }
+   });
+
+    showTeam();
+
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+});
