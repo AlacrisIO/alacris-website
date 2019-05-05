@@ -1,0 +1,783 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Alacris</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link href="https://fastcdn.org/Lightbox/2.8.1/css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<h1 class="visuallyhidden">Alacris Protocol</h1>
+<header class="header">
+    <ul class="mmenu__list">
+        <li class="mmenu__item mmenu-item">
+            <a href="#developer" class="mmenu-item__link">Developers</a>
+        </li>
+        <li class="mmenu__item mmenu-item faq-mobile">
+            <a href="" class="mmenu-item__link faq-mobile__link">FAQ</a>
+            <ul class="mmenu-item__list">
+                <li class="mmenu-item-list__item">
+                    <a href="#case-study" class="mmenu-item-list-item__link">EXAMPLE CASE STUDY</a>
+                </li>
+                <li class="mmenu-item-list__item">
+                    <a href="#roadmap" class="mmenu-item-list-item__link">ROADMAP TO PRODUCTION</a>
+                </li>
+                <li class="mmenu-item-list__item">
+                    <a href="#primitives" class="mmenu-item-list-item__link">EXAMPLE PRIMITIVES</a>
+                </li>
+                <li class="mmenu-item-list__item">
+                    <a href="#alacrity" class="mmenu-item-list-item__link">ALACRITY</a>
+                </li>
+            </ul>
+        </li>
+        <li class="mmenu__item mmenu-item faq-mobile">
+            <a href="" class="mmenu-item__link faq-mobile__link">Tech. & Capabilities</a>
+            <ul class="mmenu-item__list">
+                <li class="mmenu-item-list__item">
+                    <a href="#ferification" class="mmenu-item-list-item__link">FORMAL VERIFICATION</a>
+                </li>
+                <li class="mmenu-item-list__item">
+                    <a href="#theory" class="mmenu-item-list-item__link">TYPE THEORY</a>
+                </li>
+                <li class="mmenu-item-list__item">
+                    <a href="#theorem" class="mmenu-item-list-item__link">THEOREM PROVING</a>
+                </li>
+                <li class="mmenu-item-list__item">
+                    <a href="#model" class="mmenu-item-list-item__link">MODEL CHECKING</a>
+                </li>
+                <li class="mmenu-item-list__item">
+                    <a href="#spaces" class="mmenu-item-list-item__link">STRAND SPACES</a>
+                </li>
+                <li class="mmenu-item-list__item">
+                    <a href="#expressiveness" class="mmenu-item-list-item__link">
+                        EXPRESSIVENESS & END-POINT PROJECTION</a>
+                </li>
+                <li class="mmenu-item-list__item">
+                    <a href="#foundation" class="mmenu-item-list-item__link">
+                        FOUNDATION, GROWTH & COLLABORATIONS</a>
+                </li>
+            </ul>
+        </li>
+        <li class="mmenu__item mmenu-item">
+            <a href="#experience" class="mmenu-item__link">Experience</a>
+        </li>
+        <li class="mmenu__item mmenu-item">
+            <a href="#references" class="mmenu-item__link">References</a>
+        </li>
+        <li class="mmenu__item mmenu-item">
+            <a href="#email-us" class="mmenu-item__link">Email us</a>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="row header__row justify-content-between align-items-center">
+            <div class="hidden-sm col-xs-auto header__hamburger-mob">
+                <div class="hamburger header__hamburger">
+                    <div class="hamburger__inner"></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-auto header-logo__wrapper">
+                <a href="#Home">
+                    <img src="img/optimized/logo/header__logo.png" srcset="img/logo/header__logo.png 2x" alt="Alacris" class="header__logo header-logo">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-10 col-auto">
+                <nav class="header__nav header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item header-nav-item">
+                            <a tabindex="1" href="#developer" class="header-nav-item__link">Developers</a>
+                        </li>
+                        <li class="header-nav__item header-nav-item faq">
+                            <a tabindex="2" href="#faq" class="header-nav-item__link header-nav-item__hover">
+                                FAQ
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="header-nav-item__list">
+                                <li class="header-nav-item-list__item">
+                                    <a href="#case-study" class="header-nav-item-list-item__link">EXAMPLE CASE STUDY</a>
+                                </li>
+                                <li class="header-nav-item-list__item">
+                                    <a href="#roadmap" class="header-nav-item-list-item__link">ROADMAP TO PRODUCTION</a>
+                                </li>
+                                <li class="header-nav-item-list__item">
+                                    <a href="#primitives" class="header-nav-item-list-item__link">EXAMPLE PRIMITIVES</a>
+                                </li>
+                                <li class="header-nav-item-list__item">
+                                    <a href="#alacrity" class="header-nav-item-list-item__link">ALACRITY</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item header-nav-item faq">
+                            <a tabindex="3" href="#capabilities" class="header-nav-item__link header-nav-item__hover">
+                                Tech. & Capabilities
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="header-nav-item__list">
+                                <li class="header-nav-item-list__item">
+                                    <a href="#ferification" class="header-nav-item-list-item__link">FORMAL VERIFICATION</a>
+                                </li>
+                                <li class="header-nav-item-list__item">
+                                    <a href="#theory" class="header-nav-item-list-item__link">TYPE THEORY</a>
+                                </li>
+                                <li class="header-nav-item-list__item">
+                                    <a href="#theorem" class="header-nav-item-list-item__link">THEOREM PROVING</a>
+                                </li>
+                                <li class="header-nav-item-list__item">
+                                    <a href="#model" class="header-nav-item-list-item__link">MODEL CHECKING</a>
+                                </li>
+                                <li class="header-nav-item-list__item">
+                                    <a href="#spaces" class="header-nav-item-list-item__link">STRAND SPACES</a>
+                                </li>
+                                <li class="header-nav-item-list__item">
+                                    <a href="#expressiveness" class="header-nav-item-list-item__link">
+                                        EXPRESSIVENESS & END-POINT PROJECTION</a>
+                                </li>
+                                <li class="header-nav-item-list__item">
+                                    <a href="#foundation" class="header-nav-item-list-item__link">
+                                        FOUNDATION, GROWTH & COLLABORATIONS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item header-nav-item">
+                            <a tabindex="4" href="#experience" target="_blank" class=" header-nav-item__link">Experience</a>
+                        </li>
+                        <li class="header-nav__item header-nav-item">
+                            <a tabindex="4" href="#references" target="_blank" class=" header-nav-item__link">References</a>
+                        </li>
+                        <li class="header-nav__item header-nav-item">
+                            <a tabindex="4" href="#email-us" target="_blank" class=" header-nav-item__link">Email us</a>
+                        </li>
+                        <li class="header-nav__item header-nav-item header-nav-item_telegram">
+                            <a href="https://t.me/alacrisio" target="_blank" class="header-nav-item-link_telegram"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="https://t.me/alacrisio" target="_blank" class="header-nav__telegram telegram-icon header-nav__telegram_mobile"></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="Home" class="tech">
+    <div class="container hero__container">
+        <img src="img/tech_diligence/alacris_logo_bg@2x.png" alt="Alacris" class="tech__logo">
+        <h1 class="h1 tech__title-main">Technology Due Diligence Subpage</h1>
+        <h2 class="h2 tech__title">
+            <span class="hero-title__span">We aim to create a robust blockchain ecosystem through
+                our agnostic operating system. Turning any developer into a blockchain developer.
+            </span>
+        </h2>
+        <a target="_blank" href="http://alacris-5315043.hs-sites.com/contact-tech-alacris"
+           class="btn tech__btn">Contact Us</a>
+    </div>
+</section>
+
+<div class="bg-white">
+    <section class="problem-solving">
+        <div class="container">
+            <ul class="problem-solving__container">
+                <li class="problem-solving-container__item">
+                    <div class="problem-solving-container-item__wrap">
+                        <span class="problem-solving-container-item-wrap__span">Problem</span>
+                        <img class="problem-solving-container-item__img" src="img/tech_diligence/Problem.png" alt="">
+                    </div>
+                    <p class="problem-solving-container-item__descr">The biggest obstacle with blockchain is nobody actually “uses” blockchain.
+                        Users want apps that make their lives better. They don’t care about the tech behind them.
+                        However, valuable apps come from a critical mass of developers building many, many apps.
+                        For this to happen, developers need to get past the difficult learning curve for blockchain
+                        tech and be confident in writing bug free code.
+                    </p>
+                </li>
+                <li class="problem-solving-container__item">
+                    <div class="problem-solving-container-item__wrap">
+                        <span class="problem-solving-container-item-wrap__span">Solution</span>
+                        <img class="problem-solving-container-item__img" src="img/tech_diligence/Solution.png" alt="">
+                    </div>
+                    <p class="problem-solving-container-item__descr">The <strong>Alacris OS platform</strong> allows for sophisticated,
+                        end-to-end DApp development, including automatic formal verification of the code for any protocol
+                        or platform. Alacris offers easy-to-use primitives as modular,
+                        flexible starting blocks that any developer can apply.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="developer" class="dev-industry">
+        <div class="container dev-industry__container">
+            <h2 class="title main-tech-title">Developers in the Industry</h2>
+            <img src="img/tech_diligence/Developers%20in%20the%20Industry.png" alt="" class="dev-industry__img">
+            <ul class="dev-industry__list">
+                <li class="dev-industry-list__item">
+                    Blockchain developers <br>
+                    ~20K to 40K worldwide
+                </li>
+                <li class="dev-industry-list__item">
+                    Traditional software <br> developers ~24 M worldwide
+                </li>
+            </ul>
+            <a target="_blank"
+               href="https://www.dappros.com/201809/blockchain-developers-worldwide-stats-absolute-vs-relative-to-population/"
+               class="btn dev-industry__btn">See more</a>
+        </div>
+    </section>
+</div>
+
+<div class="build-blockchain">
+    <ul class="container build-blockchain__list">
+        <li class="build-blockchain-list__item">
+            <a target="_blank"
+               href="https://hackernoon.com/why-developing-for-the-blockchain-is-hard-part-1-posting-transactions-dde21c025c65">
+                <span class="build-blockchain-list-item__span">Why</span>
+                building for blockchain is hard?
+            </a>
+        </li>
+        <li class="build-blockchain-list__item">
+            <a target="_blank"
+               href="https://medium.com/blockchain-blog/17-blockchain-platforms-a-brief-introduction-e07273185a0b">
+                <span class="build-blockchain-list-item__span">Where</span>
+                is the Complexity in Blockchain platforms & Choices?
+            </a>
+        </li>
+        <li class="build-blockchain-list__item">
+            <span class="build-blockchain-list-item__span">What</span>
+            are the biggest blockchain errors in the past?
+            <ul class="build-blockchain-list-item__sublist">
+                <li class="build-blockchain-list-item-sublist__subitem">
+                    DAO loses $60M due to smart
+                    contract loopholes
+                    <a target="_blank"
+                       href="https://www.wired.com/2016/06/50-million-hack-just-showed-dao-human/"
+                       class="build-blockchain-list-item-sublist-subitem__link">See more
+                    </a>
+                </li>
+                <li class="build-blockchain-list-item-sublist__subitem">
+                    Mt. loses $850K due to faulty coding malleability
+                    <a target="_blank"
+                       href="https://www.reuters.com/article/us-bitcoin-mtgox-insight-idUSBREA1R06C20140228"
+                       class="build-blockchain-list-item-sublist-subitem__link">See more
+                    </a>
+                </li>
+                <li class="build-blockchain-list-item-sublist__subitem">
+                    Parity loses $170M due to preventable bug
+                    <a target="_blank"
+                       href="https://hackernoon.com/how-the-170-million-ethereum-bug-could-have-been-prevented-819053c3b2cb"
+                       class="build-blockchain-list-item-sublist-subitem__link">See more
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="container questions">
+    <h2 class="title main-tech-title">Frequently Asked Questions</h2>
+    <p class="questions__description">All of our information is amazing, but we have also listed questions we commonly get if
+        you’re short on time. Simply click on the question to scroll straight to the answer, or
+        browse our page in its entirety. Have a question not listed or answered in our reading?
+        <a target="_blank" href="http://alacris-5315043.hs-sites.com/contact-tech-alacris"
+           class="questions-description__link">Email us</a> and we’ll get back to you.
+    </p>
+    <ul class="questions__list">
+        <li class="questions-list__item">
+            <a target="_blank" href="#case-study">
+                What does a real world example case study of using Alacris look like?
+            </a>
+        </li>
+        <li class="questions-list__item">
+            <a href="#alacrity">What does the new Language Alacrity Sample Code look like?</a>
+        </li>
+        <li class="questions-list__item">
+            <a href="#ferification">What is Formal Verification and how does it work?</a>
+        </li>
+        <li class="questions-list__item">
+            <a href="#experience">
+                Do you have any videos explaining Alacris and your technology?
+            </a>
+        </li>
+    </ul>
+    <div class="questions__examples" id="case-study">
+        <h3 class="questions-examples__title">Example Case Study</h3>
+        <img src="img/tech_diligence/example_case-study.png" alt="">
+    </div>
+    <div class="questions__examples" id="roadmap">
+        <h3 class="questions-examples__title">Roadmap to Production</h3>
+        <img src="img/tech_diligence/roadmap.png" alt="">
+    </div>
+    <div class="questions__examples" id="primitives">
+        <h3 class="questions-examples__title">Example Primitives</h3>
+        <img src="img/tech_diligence/primitives.png" alt="">
+    </div>
+    <div class="questions__examples" id="alacrity">
+        <h3 class="questions-examples__title">Alacrity</h3>
+
+        <div class="questions-example__container">
+            <span class="questions-examples__subtitle">A DSL for Trustworthy Distributed Applications</span>
+            <strong class="questions-examples__strong questions-examples__strong-padding">
+                Cascading verification through type theory, theorem proving, model checking,
+                strand spaces, and dynamical system simulation
+            </strong>
+            <strong class="questions-examples__strong">
+                The promises our tools provide
+            </strong>
+
+            <ul class="questions-examples__list">
+                <li>
+                    Execution: Guarantee that on-blockchain behavior respects DSL semantics.
+                </li>
+                <li>
+                    Full Abstraction: Guarantee that all DSL semantics cannot be violated by direct
+                    blockchain interactions.
+                </li>
+            </ul>
+
+            <strong class="questions-examples__strong">
+                Expressiveness through end-point projection: one source, many programs
+            </strong>
+
+            <span>Verification of DSL Programs…</span>
+
+            <ul class="questions-examples__list-last">
+                <li class="questions-examples-list-last__item">
+                    <span class="questions-examples-list-last-item_span">Correctness:</span>
+                    Guarantee that the state space of the protocol matches the desired functional
+                    characteristics, like a balanced ledger.
+                </li>
+                <li class="questions-examples-list-last__item">
+                    <span class="questions-examples-list-last-item_span">Security:</span>
+                    Guarantee that only authenticated participants influence the protocol
+                    behavior (i.e., non-interference of adversaries) in the Dolev-Yao model.
+                </li>
+                <li class="questions-examples-list-last__item">
+                    <span class="questions-examples-list-last-item_span">Efficiency:</span>
+                     Guarantee that the state evolves in Pareto-efficient way for all protocol-following participants.
+                </li>
+            </ul>
+        </div>
+        <img src="img/tech_diligence/example_alacris.png" alt="">
+    </div>
+
+</div>
+
+<div class="capabilities">
+    <div class="container">
+        <h2 class="title main-tech-title">Alacris Technology & Capabilities</h2>
+
+        <div class="capabilities__container" id="ferification">
+            <h3 class="questions-examples__title">Formal Verification</h3>
+            <img src="img/tech_diligence/verifications.png" alt="">
+        </div>
+
+        <div class="capabilities__container" id="theory">
+            <h3 class="questions-examples__title">Type Theory</h3>
+            <img src="img/tech_diligence/theory.png" alt="">
+        </div>
+
+        <div class="capabilities__container" id="theorem">
+            <h3 class="questions-examples__title">Theorem Proving</h3>
+            <img src="img/tech_diligence/correctness.png" alt="">
+        </div>
+
+        <div class="capabilities__container" id="model">
+            <h3 class="questions-examples__title">Model Checking</h3>
+            <img src="img/tech_diligence/model.png" alt="">
+        </div>
+
+        <div class="capabilities__container" id="spaces">
+            <h3 class="questions-examples__title">Strand Spaces</h3>
+            <img src="img/tech_diligence/spaces.png" alt="">
+        </div>
+
+        <div class="capabilities__container">
+            <h3 class="questions-examples__title">Strand Spaces</h3>
+            <img src="img/tech_diligence/strand_spaces.png" alt="">
+        </div>
+
+        <div class="capabilities__container" id="expressiveness">
+            <h3 class="questions-examples__title">Expressiveness & End-Point Projection</h3>
+            <img src="img/tech_diligence/expressiveness.png" alt="">
+        </div>
+
+        <div class="capabilities__container" id="foundation">
+        <h3 class="questions-examples__title">Foundation, Growth & Collaborations</h3>
+        <img src="img/tech_diligence/foundation.png" alt="">
+    </div>
+    </div>
+    <img class="oval oval-1" src="img/tech_diligence/oval_1.png" alt="">
+    <img class="oval oval-2" src="img/tech_diligence/oval_2.png" alt="">
+    <img class="oval oval-3" src="img/tech_diligence/oval_3.png" alt="">
+    <img class="oval oval-4" src="img/tech_diligence/oval_4.png" alt="">
+</div>
+
+<div id="experience" class="container experience">
+    <h2 class="title main-tech-title">Experience Alacris</h2>
+    <a target="_blank" href="https://github.com/AlacrisIO" class="btn experience__btn">
+        <span class="git-icon"></span>
+        Alacris on GitHub
+    </a>
+    <ul class="experience__list">
+        <li class="experience-list__item">
+            <span class="experience-list-item__span">OHK Summit 2019 Presentation</span>
+            <iframe width="300" height="212" src="https://www.youtube.com/embed/0Bn2NQP2i7A?start=25262" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <li class="experience-list__item">
+            <span class="experience-list-item__span">Alacris Tech Talk Chris Swenor, CEO</span>
+            <iframe width="300"
+                    height="212"
+                    src="https://www.youtube.com/embed/7yDby9YiHvs"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+
+        <li class="experience-list__item">
+            <span class="experience-list-item__span">Francois Tech Talk video</span>
+            <iframe width="300" height="212" src="https://www.youtube.com/embed/hjmGQpyGSUE?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+
+        <li class="experience-list__item">
+            <span class="experience-list-item__span">Tech Talk Q&A</span>
+            <iframe width="300" height="212" src="https://www.youtube.com/embed/qV34GuiqnNY?start=717" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <li class="experience-list__item">
+            <span class="experience-list-item__span">OHK Summit 2019 Presentation</span>
+            <iframe width="300" height="212" src="https://www.youtube.com/embed/qV34GuiqnNY?start=698" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+    </ul>
+</div>
+
+<div id="references" class="container research">
+    <h2 class="title main-tech-title">Alacris Developer Articles & Research</h2>
+    <ul class="research__list">
+        <li class="research-list__item">
+            Kimball Germane, <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            Michael Adams, and Matthew Might.
+            “<a target="_blank"
+                href="http://kimball.germane.net/germane-dcfa-techreport.pdf"
+                class="research-list-item__link">Demand Control-Flow Analysis</a>”. <br>
+            <em class="research-list-item__italic">VMCAI 2019.</em>
+        </li>
+
+        <li class="research-list__item">
+            Radha Nakade, Eric Mercer, Peter Aldous and
+            <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            “<a target="_blank"
+                href="https://faculty.cs.byu.edu/~pdiddy/papers/cg.pdf"
+                class="research-list-item__link">Model Checking Task Parallel Programs for Data-race</a>”. <br>
+            <em class="research-list-item__italic">NASA Formal Methods Symposium 2018.</em>
+        </li>
+
+        <li class="research-list__item">
+            Stephen Chang,
+            <strong class="research-list-item__strong">Alex Knauth,</strong>
+            and Ben Greenman.
+            “<a target="_blank"
+                href="http://delivery.acm.org/10.1145/3010000/3009886/p694-chang.pdf?ip=72.183.10.175&id=3009886&acc=CHORUS&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1556644582_2cd7c0370c1feee8206cf319311d7404"
+                class="research-list-item__link">Type Systems as Macros</a>”. <br>
+            <em class="research-list-item__italic">POPL 2017.</em>
+        </li>
+
+        <li class="research-list__item">
+            Max S. New, Burke Fetscher,
+            <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            and Robert Bruce Findler.
+            “<a target="_blank"
+                href="https://jeapostrophe.github.io/home/static/jfp2017-nfmf.pdf"
+                class="research-list-item__link">Fair Enumeration Combinators</a>”. <br>
+            <em class="research-list-item__italic">Journal of Functional Programming 27, e19, 2017.</em>
+        </li>
+
+        <li class="research-list__item">
+            <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            Burke Fetscher, Max New, Daniel Felty, and Robert Bruce Findler.
+            “<a target="_blank"
+                href="https://jeapostrophe.github.io/home/static/scp2017-mfnff.pdf"
+                class="research-list-item__link">A Coq Library For Internal Verification of Running-Times</a>”.
+            <br>
+            <em class="research-list-item__italic">Science of Computer Programming 2017.</em>
+        </li>
+
+        <li class="research-list__item">
+            Neil Toronto,
+            <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            and David Van Horn.
+            “<a target="_blank"
+                href="https://arxiv.org/abs/1412.4053"
+                class="research-list-item__link">Running Probabilistic Programs Backwards</a>”.
+            <br>
+            <em class="research-list-item__italic">ESOP 2015.</em>
+        </li>
+
+        <li class="research-list__item">
+            Neil Toronto and <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            “<a target="_blank"
+                href="https://jeapostrophe.github.io/home/static/tm-cise2014.pdf"
+                class="research-list-item__link">Practically Accurate Floating-Point Math</a>”. <br>
+            <em class="research-list-item__italic">Computing in Science and Engineering, July 2014.</em>
+        </li>
+
+        <li class="research-list__item">
+            Yu Huang, Eric Mercer, and <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            “<a target="_blank"
+                href="https://jeapostrophe.github.io/home/static/2013-ase.pdf"
+                class="research-list-item__link">Proving MCAPI Executions are Correct using SMT</a>”. <br>
+            <em class="research-list-item__italic">ASE 2013.</em>
+        </li>
+
+        <li class="research-list__item">
+            Neil Toronto and <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            “<a target="_blank"
+                href="https://jeapostrophe.github.io/home/static/toronto-2012flops.pdf"
+                class="research-list-item__link">Computing in Cantor’s Paradise with LambdaZFC</a>”. <br>
+            <em class="research-list-item__italic">FLOPS 2012.</em>
+            (<a target="_blank"
+                href="https://github.com/ntoronto/plt-stuff/tree/master/flops2012"
+                class="research-list-item__link">Code</a>)
+        </li>
+
+        <li class="research-list__item">
+            Everett Morse, Nick Vrvilo, Eric Mercer, and
+            <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            “<a target="_blank"
+                href="https://jeapostrophe.github.io/home/static/vmcai-2012.pdf"
+                class="research-list-item__link">Modeling Asynchronous Message Passing for C Programs</a>”. <br>
+            <em class="research-list-item__italic">VMCAI 2012.</em>
+            (<a target="_blank"
+                href="https://github.com/ericmercer/4M"
+                class="research-list-item__link">Code</a>)
+        </li>
+
+        <li class="research-list__item">
+            Tim Disney, Cormac Flanagan, and <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            “<a target="_blank"
+                href="https://jeapostrophe.github.io/home/static/icfp2011-dfm.pdf"
+                class="research-list-item__link">Temporal Higher-Order Contracts</a>”.. <br>
+            <em class="research-list-item__italic">International Conference on Functional Programming, 2011.</em>
+        </li>
+
+        <li class="research-list__item">
+            <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            “<a target="_blank"
+                href="https://jeapostrophe.github.io/home/static/oopsla026-mccarthy.pdf"
+                class="research-list-item__link">The Two-State Solution: Native and Serializable
+            Continuations Accord</a>”. <br>
+            <em class="research-list-item__italic">International Conference on Object Oriented Programming,
+                Systems, Languages and Applications, 2010.
+            </em>
+            (<a target="_blank"
+                href="https://docs.racket-lang.org/web-server/stateless.html#(form._((lib._web-server/lang/abort-resume..rkt)._serial-~3enative))"
+                class="research-list-item__link">Code</a>)
+        </li>
+
+        <li class="research-list__item">
+            <strong class="research-list-item__strong">Jay McCarthy,</strong>
+            and Shriram Krishnamurthi.
+            “<a target="_blank" href="https://jeapostrophe.github.io/home/static/dispatch.pdf"
+                class="research-list-item__link">Trusted Multiplexing of Cryptographic Protocols</a>”. <br>
+            <em class="research-list-item__italic">
+                International Workshop on Formal Aspects in Security and Trust,
+                2009.
+            </em>
+        </li>
+
+        <li class="research-list__item">
+            <strong class="research-list-item__strong">Jay McCarthy.</strong>
+            “<a target="_blank" href="https://jeapostrophe.github.io/home/static/icfp065-mccarthy.pdf"
+                class="research-list-item__link">
+                Automatically RESTful Web Applications Or, Marking Modular Serializable Continuations
+            </a>”. <br>
+            <em class="research-list-item__italic">
+                International Conference on Functional Programming, 2009.
+            </em>
+            (<a target="_blank" href="https://docs.racket-lang.org/web-server/stateless.html#(part._.Serializable_.Continuations)"
+               class="research-list-item__link">
+                Code
+            </a>)
+        </li>
+
+        <li class="research-list__item">
+            <strong class="research-list-item__strong">Jay McCarthy </strong>
+            and Shriram Krishnamurthi.
+            “<a target="_blank" href="https://cs.brown.edu/~sk/Publications/Papers/Published/mk-crypto-prot-expl-epp/paper.pdf"
+                class="research-list-item__link">Cryptographic Protocol Explication and End-Point Projection
+        </a>”. <br>
+            <em class="research-list-item__italic">
+                European Symposium on Research in Computer Security, 2008.
+            </em>
+        </li>
+
+        <li class="research-list__item">
+            de Moura L., Bjørner N. (2008)
+            “<a target="_blank" href="https://pdfs.semanticscholar.org/bb0f/1eb9577e06eef1354bf649c92ac57698b441.pdf"
+                class="research-list-item__link">Z3: An Efficient SMT Solver
+        </a>”. In: Ramakrishnan C.R., Rehof J. (eds) Tools and Algorithms for the Construction and Analysis of Systems.
+            TACAS 2008. Lecture Notes in Computer Science, vol 4963.
+        </li>
+
+        <li class="research-list__item">
+            Springer, Berlin, Heidelberg,
+            <strong class="research-list-item__strong">Jay McCarthy </strong>
+            and Shriram Krishnamurthi.
+            “<a target="_blank" href="https://cs.brown.edu/~sk/Publications/Papers/Published/mk-crypto-prot-expl-epp/paper.pdf"
+                class="research-list-item__link">Minimal Backups of Cryptographic Protocol Runs
+        </a>”. <br>
+            <em class="research-list-item__italic">
+                Formal Methods in Security Engineering, 2008.
+            </em>
+            (<a target="_blank" href="http://www.cs.brown.edu/research/plt/dl/fmse2008/backup.tar.bz2"
+               class="research-list-item__link">Code
+            </a>)
+        </li>
+
+        <li class="research-list__item">
+            <strong class="research-list-item__strong">Jay McCarthy </strong>
+            , Joshua Guttman, John Ramsdell, and Shriram Krishnamurthi.
+            “<a target="_blank" href="http://cs.brown.edu/~sk/Publications/Papers/Published/mgrk-comp-crypto-prot-depl-web/paper.pdf"
+                class="research-list-item__link">Compiling Cryptographic Protocols for Deployment on the Web
+        </a>”. <br>
+            <em class="research-list-item__italic">
+                International World Wide Web Conference, 2007.
+            </em>
+        </li>
+
+        <li class="research-list__item">
+            F. J. Thayer, J. Herzog, and J. D. Guttman,
+            “<a target="_blank" href="https://pdfs.semanticscholar.org/d228/5fa6d368fd18b5b540091d9c6b36e438073e.pdf?_ga=2.105032771.1965496249.1556644230-582871520.1556644230"
+                class="research-list-item__link">Strand spaces: Proving security protocols correct</a>”. <br>
+            <em class="research-list-item__italic"> Journal of Computer Security, vol. 7, no. 2/3, pp. 191-230, 1999.
+            </em>
+        </li>
+    </ul>
+    <a target="_blank" href="http://alacris-5315043.hs-sites.com/contact-tech-alacris"
+       id="email-us" class="btn research__btn">Contact us</a>
+</div>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__top row">
+            <div class="col-auto">
+                <a href="https://legilogic.com" target="_blank">
+                    <img src="img/example/legiLogc.png" alt="LegiLogic logo" class="footer__logo footer__logo_legiLogic">
+                </a>
+            </div>
+            <ul class="footer__top-list">
+                <li class="footer__top-item">
+                    <a target="_blank" href="https://legilogic.workable.com/" class="footer__top-link" href="">Careers</a></li>
+                <li class="footer__top-item"><a class="footer__top-link" href="https://alacris.typeform.com/to/x06duY"
+                                                target="_blank"
+                >Email Us</a></li>
+            </ul>
+            <!-- <a href="" class="btn footer__top-email">Email Updates</a> -->
+            <span class="footer__bottom-contact contact-mobile">Offices: 695 Atlantic Ave, Boston, Massachusetts US</span>
+        </div>
+        <div class="footer__bottom">
+            <div class="col-auto">
+                <a href="#Home">
+                    <img src="img/optimized/logo/header__logo.png" srcset="img/logo/header__logo.png 2x" alt="Alacris logo" class="footer__logo">
+                </a>
+            </div>
+            <span class="footer__bottom-contact contact-desktop">Offices: 695 Atlantic Ave, Boston, Massachusetts US</span>
+            <ul class="footer__bottom-social">
+                <li><a class="footer__bottom-item footer__bottom-item_medium"
+                       href="https://medium.com/alacris" target="_blank"></a></li>
+                <li><a class="footer__bottom-item footer__bottom-item_linkedin"
+                       href="https://www.linkedin.com/company/alacris-protocol" target="_blank"></a></li>
+                <li><a class="footer__bottom-item footer__bottom-item_twitter"
+                       href="https://twitter.com/alacrisos" target="_blank"></a></li>
+                <li><a class="footer__bottom-item footer__bottom-item_facebook"
+                       href="https://www.facebook.com/alacrisos/" target="_blank"></a></li>
+                <li><a class="footer__bottom-item footer__bottom-item_github"
+                       href="https://github.com/AlacrisIO" target="_blank"></a></li>
+                <li><a class="footer__bottom-item footer__bottom-item_telegram"
+                       href="https://t.me/alacrisio" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!--<div class="col-auto">
+  <a href="https://t.me/alacrisio" target="_blank" class="footer__telegram"></a>
+</div>-->
+<!-- POPUP MARKUP -->
+
+<div class="popup">
+    <div class="popup__content">
+        <div class="popup__image-wrapper">
+            <img src="img/popup/Pierre-Yves_popup.png" alt="Advisor Photo" class="popup__image">
+        </div>
+        <div class="popup__info">
+            <div class="popup__name-position-wrapper">
+                <p class="popup__name">Test Name</p>
+                <p class="popup__position">test position</p>
+            </div>
+            <p class="popup__cv">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio facilis dolorum, illo
+                hic perspiciatis minus incidunt commodi, error facere praesentium accusantium, obcaecati magni eveniet eos
+                accusamus modi animi ut eum.</p>
+            <div class="popup__bottom">
+                <ul class="popup__socials">
+
+                </ul>
+                <a href="#" target="_blank" class="popup__link"></a>
+            </div>
+        </div>
+    </div>
+    <div class="popup__close"></div>
+</div>
+<div class="popup__shadow"></div>
+<!-- POPUP MARKUP END-->
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://fastcdn.org/Lightbox/2.8.1/js/lightbox.min.js"></script>
+
+<script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
+</script>
+<script src="js/plugins.js"></script>
+<script src="js/tech.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-126531474-1', 'auto');
+    ga('send', 'pageview')
+
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+<img src="img/popup/Max-Faingezicht_popup.png" class="cached-image">
+<img src="img/popup/Nada-Amin_popup.png" class="cached-image">
+<img src="img/popup/Pierre-Yves_popup.png" class="cached-image">
+<img src="img/popup/Rick-Dudley_popup.png" class="cached-image">
+<img src="img/popup/Thomas-Hardjono_popup.png" class="cached-image">
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5315043.js"></script>
+<!-- End of HubSpot Embed Code -->
+</body>
+
+</html>
