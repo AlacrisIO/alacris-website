@@ -118,7 +118,9 @@ textarea {
   text-transform: uppercase;
   margin: 0;
 }
-
+.tech-title{
+  color: #535962;
+}
 .btn {
   font-family: "Open Sans", sans-serif;
   height: 50px;
@@ -403,6 +405,7 @@ textarea {
 }
 
 .header-nav__list {
+  position: relative;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
@@ -452,7 +455,42 @@ textarea {
   max-width: 110%;
   transition: max-width .2s ease .2s;
 }
-
+.header-nav-item__list{
+  position: absolute;
+  background-color: #f5f5f5;
+  padding: 15px;
+  top: 32px;
+  display: none;
+}
+.faq:hover .header-nav-item__list{
+  display: block;
+}
+.header-nav-item-list__item{
+  margin-bottom: 15px;
+  list-style: none;
+}
+.header-nav-item-list__item:last-child{
+  margin-bottom: 0;
+}
+.header-nav-item-list-item__link:hover{
+  color: #31A5DB;
+}
+.header-nav-item__hover{
+  position: relative;
+}
+.menu-arrow{
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  display: block;
+  width: 6px;
+  height: 5px;
+  background: url('../img/tech_diligence/Triangle.svg');
+}
+.header-nav-item-list-item__link{
+  color: #535962;
+  text-decoration: none;
+}
 .header-nav-item_telegram {
   width: 40px;
   height: 40px;
@@ -487,7 +525,17 @@ textarea {
   padding-bottom: 210px;
   background-image: url(../img/optimized/bg/hero-bg.png)
 }
-
+.tech{
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+  background-size: cover;
+  background-position: 50% 100%;
+  max-height: 56vw;
+  height: auto;
+  padding-bottom: 210px;
+  background-image: url(../img/tech_diligence/header_img.png)
+}
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
   .hero {
@@ -507,6 +555,11 @@ textarea {
   height: auto;
   margin-top: 112px;
 }
+.tech__logo{
+  width: 105px;
+  height: auto;
+  margin-top: 87px;
+}
 
 .hero__title {
   color: #FFFFFF;
@@ -519,13 +572,45 @@ textarea {
   text-transform: uppercase;
   width: 619px;
 }
-
+.tech__title{
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  width: 553px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.main-tech-title{
+  color: #535962;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  text-transform: uppercase;
+}
+.tech__title-main{
+  width: 595px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
 
 .hero__btn {
   min-width: 260px;
   margin-top: 37px;
 }
-
+.tech__btn{
+  min-width: 231px;
+  margin-top: 36px;
+}
 /*END ===== HERO ===== END*/
 
 /*START ===== DESCRIPTION ===== START*/
@@ -1141,6 +1226,344 @@ textarea {
 }
 
 /*END ===== EXAMPLE CASE STUDY ===== END*/
+.bg-white{
+  position: relative;
+  background-image: url('../img/tech_diligence/bg_developer.png');
+  padding: 80px 0 120px 0;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-top: -11%;
+}
+/*START ===== PROBLEM SOLVING ===== START*/
+.problem-solving{
+  padding-top: 150px;
+}
+.problem-solving__container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 815px;
+  margin: 0 auto;
+}
+.problem-solving-container__item{
+  display: flex;
+  list-style: none;
+  padding-bottom: 40px;
+}
+.problem-solving-container-item__wrap{
+  display: flex;
+  flex-direction: column;
+  margin-right: 21px;
+}
+.problem-solving-container-item-wrap__span{
+  color: #535962;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.78px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+}
+.problem-solving-container-item__img{
+  width: 149px;
+  height: 149px;
+  object-fit: contain;
+}
+.problem-solving-container-item__descr{
+  color: #1c2126;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 59px;
+}
+
+/*END ===== PROBLEM SOLVING ===== END*/
+
+/*START ===== DEV INDUSTRY ===== START*/
+
+.dev-industry{
+  padding-top: 100px;
+}
+.dev-industry__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev-industry__img{
+  padding-top: 32px;
+}
+.dev-industry__list{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 761px;
+  margin: 0 auto;
+  padding: 0;
+}
+.dev-industry-list__item{
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  color: #1c2126;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.43px;
+  line-height: 28px;
+  list-style: none;
+}
+.dev-industry-list__item::before{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 9px;
+}
+.dev-industry-list__item:first-child::before{
+  background-color: #f18000;
+}
+.dev-industry-list__item:last-child::before{
+  background-color: #31a5db;
+}
+.dev-industry__btn{
+  min-width: 231px;
+  margin-top: 42px;
+}
+
+/*END ===== DEV INDUSTRY ===== END*/
+
+/*START ===== BUILD BLOCKCHAIN ===== START*/
+
+.build-blockchain{
+  background-image: url('../img/tech_diligence/bg_blockchain.png');
+  padding: 220px 0 140px 0;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-top: -150px;
+}
+.build-blockchain__list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.build-blockchain-list__item{
+  color: #1c2126;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.43px;
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+.build-blockchain-list__item>a{
+  color: #000;
+  text-decoration: none;
+}
+.build-blockchain-list-item__sublist{
+  padding-top: 20px;
+}
+.build-blockchain-list-item__span{
+  color: #31a5db;
+}
+.build-blockchain-list-item-sublist__subitem{
+  list-style: none;
+  color: #1c2126;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.build-blockchain-list-item-sublist-subitem__link{
+  text-decoration: none;
+  color: #31a5db;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+/*END ===== BUILD BLOCKCHAIN ===== END*/
+
+/*START ===== FAQ ===== START*/
+
+.questions{
+  padding-top: 150px;
+}
+.questions__description{
+  color: #1c2126;
+  font-family: "Open Sans",sans-serif;
+  margin: 0;
+  padding-top: 42px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 24px;
+  padding-bottom: 32px;
+}
+.questions-description__link{
+  color: #31a5db;
+  font-weight: 700;
+  text-decoration: none;
+}
+.questions-list__item{
+  list-style: none;
+  margin-bottom: 16px;
+}
+.questions-list__item > a{
+  color: #1c2126;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.34px;
+  line-height: 28px;
+  text-decoration: none;
+}
+.questions-list__item:last-child{
+  margin-bottom: 0;
+}
+.questions__examples{
+  padding-top: 100px;
+}
+.questions-examples__title{
+  color: #1c2126;
+  font-family: "Open Sans",sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 31px;
+}
+.questions-examples__strong{
+  display: block;
+}
+.questions-example__container{
+  display: block;
+  color: #1c2126;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.34px;
+  line-height: 28px;
+}
+.questions-examples__subtitle{
+  padding-bottom: 10px;
+}
+.questions-examples__strong{
+  font-weight: 700;
+  display: block;
+}
+.questions-examples__strong-padding{
+  padding-bottom: 50px;
+}
+.questions-examples__list{
+  list-style: none;
+}
+.questions-examples-list-last-item_span{
+  font-weight: 600;
+}
+/*END ===== FAQ ===== END*/
+
+/*START ===== CAPABILITIES ===== START*/
+
+.capabilities{
+  position: relative;
+  padding-top: 100px;
+}
+.capabilities__container{
+  padding-bottom: 50px;
+}
+
+/*END ===== CAPABILITIES ===== END*/
+
+/*START ===== EXPERIENCE ===== START*/
+
+.experience{
+  padding-top: 50px;
+}
+.experience__btn{
+  display: flex;
+  align-items: center;
+  width: 231px;
+  margin: 42px auto;
+  padding: 14px 17px;
+}
+.git-icon{
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  background: url('../img/tech_diligence/git_icon.svg');
+}
+.experience__list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience-list__item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-right: 42px;
+}
+.experience-list__item:nth-child(3n){
+  margin-right: 0;
+}
+.experience-list-item__span{
+  display: block;
+  padding-bottom: 3px;
+  color: #1c2126;
+  font-family: "Open Sans Semi Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.34px;
+  line-height: 28px;
+}
+/*END ===== EXPERIENCE ===== END*/
+
+/*START ===== RESEARCH ===== START*/
+
+.research__list{
+  display: flex;
+  flex-direction: column;
+}
+.research-list__item{
+  color: #1c2126;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.34px;
+  line-height: 28px;
+  margin-bottom: 22px;
+}
+
+.research-list-item__strong{
+  font-weight: 700;
+}
+.research-list-item__link{
+  color: #31a5db;
+  font-family: "Open Sans Semi Bold", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+.research-list-item__italic{
+  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
+}
+.research__btn{
+  min-width: 231px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 231px;
+}
+/*END ===== RESEARCH ===== END*/
+
 
 /*START ===== FOOTER ===== START*/
 .footer {
@@ -1466,6 +1889,40 @@ textarea {
 .team__list li {
     list-style: none;
 }
+.questions__examples>img{
+  width: 100%;
+  height: 100%;
+}
+#alacrity > img {
+  width: auto;
+}
+.capabilities__container>img{
+  width: 100%;
+  height: 100%;
+}
+.active-block{
+  display: flex !important;
+}
+.oval{
+  position: absolute;
+  z-index: -1;
+}
+.oval-1{
+  top: 0;
+  right: 0;
+}
+.oval-2{
+  top: 20%;
+  left: 0;
+}
+.oval-3{
+  right: 0;
+  top: 54%;
+}
+.oval-4{
+  left: 0;
+  bottom: 5%;
+}
 /*END ===== POPUP ===== END*/
 
 
@@ -1564,6 +2021,16 @@ textarea {
   }*/
   .team__list-item{
       margin-right: 20px;
+  }
+  .experience__list{
+    justify-content: space-between;
+    padding: 0;
+  }
+  .experience-list__item{
+    margin-right: 0;
+  }
+  .experience-list__item>iframe{
+    width: 400px;
   }
 }
 @media (max-width: 1199px) {
@@ -1712,6 +2179,21 @@ textarea {
         width: 32%;
         margin-right: 9px;
     }
+    .header-nav-item__link{
+      font-size: 0.7em;
+    }
+  .menu-arrow{
+    top: 6px;
+  }
+  .tech{
+    background-image: url(../img/tech_diligence/header_img_mobile.png);
+    max-height: none;
+  }
+  .experience__list{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 880px) {
@@ -1835,14 +2317,33 @@ textarea {
 
   .mmenu-item {
     width: 100%;
-    height: 87px;
-    max-height: calc(16.66% - 20px);
+    height: auto;
+    max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
   }
-
+  .faq-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mmenu-item-list__item{
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  .mmenu-item-list-item__link{
+    text-decoration: none;
+    color: #535962;
+  }
+  .mmenu-item__list{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+  }
   .mmenu-item__link {
     display: flex;
     justify-content: center;
@@ -1852,6 +2353,7 @@ textarea {
     color: #535962;
     font-family: "Open Sans";
     font-size: 20px;
+    padding: 25px 0;
     font-weight: 600;
     line-height: 27px;
     text-align: center;
@@ -2328,6 +2830,22 @@ textarea {
         width: 45%;
         margin-right: 25px;
     }
+  .problem-solving{
+    padding-top: 50px;
+  }
+  .tech{
+    padding-bottom: 100px;
+  }
+  .dev-industry__img{
+    width: 100%;
+    height: auto;
+  }
+  .dev-industry__list{
+    flex-direction: column;
+  }
+  .oval{
+    display: none;
+  }
 }
 
 
@@ -2335,6 +2853,66 @@ textarea {
   .description:after {
     bottom: 0;
   }
+  .tech__title-main{
+    width: 100%;
+    font-size: 18px;
+  }
+  .tech__title{
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .problem-solving-container__item{
+    flex-direction: column;
+  }
+  .problem-solving-container-item__descr{
+    padding-top: 22px;
+    font-size: 14px;
+  }
+  .problem-solving-container-item__wrap{
+    margin-right: 0;
+  }
+  .problem-solving__container{
+    padding-left: 0;
+  }
+  .problem-solving-container-item-wrap__span{
+    font-size: 22px;
+  }
+  .dev-industry-list__item{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .tech__btn{
+    min-width: 161px;
+    font-size: 16px;
+  }
+  .dev-industry__btn{
+    min-width: 161px;
+  }
+  .build-blockchain-list__item{
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .build-blockchain__list{
+    padding-left: 30px;
+  }
+  .build-blockchain-list-item-sublist__subitem{
+    font-size: 14px;
+  }
+  .build-blockchain-list-item-sublist-subitem__link{
+    font-size: 14px;
+  }
+  .questions{
+    padding-top: 50px;
+  }
+  .questions__list{
+    padding-left: 0;
+  }
+  .questions__examples{
+    padding-top: 5px;
+  }
+
 }
 @media screen and (max-width: 529px) {
     .advisors__list{
@@ -2344,6 +2922,9 @@ textarea {
         width: 51%;
         margin-right: 0;
     }
+  .experience-list__item>iframe{
+    width: 100%;
+  }
 }
 @media screen  and (max-width: 461px){
     .team__list-item:nth-child(4n){
