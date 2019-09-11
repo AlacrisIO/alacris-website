@@ -2039,6 +2039,14 @@ textarea {
     max-width: 235px;
   }
 
+  .founder {
+    height: 285px;
+  }
+
+  .founder__image {
+    height: 100%;
+    object-fit: cover
+  }
   .founder__cv {
     line-height: 15px;
   }
