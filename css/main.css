@@ -569,7 +569,7 @@ textarea {
   text-align: center;
   margin-top: 39px;
     margin-bottom: 0;
-  text-transform: uppercase;
+  font-variant: small-caps;
   width: 619px;
 }
 .tech__title{
@@ -588,7 +588,7 @@ textarea {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.78px;
-  text-transform: uppercase;
+  font-variant: small-caps;
 }
 .tech__title-main{
   width: 595px;
@@ -597,7 +597,7 @@ textarea {
   font-size: 28px;
   font-weight: 700;
   line-height: 28px;
-  text-transform: uppercase;
+  font-variant: small-caps;
   text-align: center;
   margin-top: 32px;
   margin-bottom: 10px;
@@ -654,7 +654,7 @@ textarea {
   letter-spacing: 1px;
   line-height: 43px;
   color: #000;
-  text-transform: uppercase;
+  font-variant: small-caps;
   margin: 0;
 }
 
@@ -773,25 +773,25 @@ textarea {
 }
 /*END ===== ALACRIS OPERATING SYSTEM ===== END*/
 
-/*START ===== BENEFITS ===== START*/
+/*START ===== PARTNERS ===== START*/
 
-.benefits__title {
+.partners__title {
   margin-top: 100px;
   margin-bottom: 24px;
 }
 
-.benefits__container {
+.partners__container {
   justify-content: center;
   display: flex;
 }
 
 
-.benefits__content {
+.partners__content {
   overflow-x: hidden;
   display: inline-block;
 }
 
-.benefits-card {
+.partners-card {
     width: 800px;
   height: 270px;
   padding-top: 45px;
@@ -803,28 +803,28 @@ textarea {
   align-items: center;
 }
 
-.benefits-card:nth-child(even) {
+.partners-card:nth-child(even) {
   flex-direction: row-reverse
 }
 
-.benefits-card-info {
+.partners-card-info {
   margin-left: 18px;
   margin-right: 30px;
 }
-.benefits-card__info_security {
+.partners-card__info_security {
   margin-bottom: 15px;
 }
-.benefits-card-info__title {
+.partners-card-info__title {
   margin-top: 45px;
   color: #31A5DB;
   font-family: "Nexa Bold", sans-serif;
   font-size: 20px;
   line-height: 24px;
-  text-transform: uppercase;
+  font-variant: small-caps;
   margin: 0;
 }
 
-.benefits-card-info__text {
+.partners-card-info__text {
   margin-top: 13px;
   max-width: 289px;
   color: #244769;
@@ -833,28 +833,28 @@ textarea {
   line-height: 24px;
 }
 
-.benefits-card__image {
+.partners-card__image {
   max-height: 150px;
   margin-right: 136px;
   margin-left: 30px;
   width: auto;
 }
 
-.benefits-card__image_cake {
+.partners-card__image_cake {
   max-height: 146px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.benefits-card__image_speed {
+.partners-card__image_speed {
   max-height: 149px;
 }
 
-.benefits-card__image_security {
+.partners-card__image_security {
   max-height: 148.46px;
 }
 
-.benefits__description{
+.partners__description{
   width: 100%;
   max-width: 663px;
   color: #1C2126;
@@ -865,7 +865,7 @@ textarea {
   padding: 0 15px;
 }
 
-/*END ===== BENEFITS ===== END*/
+/*END ===== PARTNERS ===== END*/
 
 /*START ===== BLOCKCHAIN ===== START*/
 .blockchain {
@@ -895,7 +895,7 @@ textarea {
   font-family: "Nexa Light", sans-serif;
   font-size: 19px;
 
-  text-transform: uppercase;
+  font-variant: small-caps;
   line-height: 23px;
   text-align: center;
 }
@@ -939,7 +939,7 @@ textarea {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  text-transform: uppercase;
+  font-variant: small-caps;
   margin: 28px 0 0 0;
 }
 
@@ -985,7 +985,7 @@ textarea {
   display: block;
   padding-top: 11px;
   padding-bottom: 4px;
-  text-transform: uppercase;
+  font-variant: small-caps;
   color: #1C2126;
   font-family: "Nexa Bold", sans-serif;
   font-size: 14px;
@@ -1026,7 +1026,7 @@ textarea {
   font-size: 30px;
   line-height: 37px;
   text-align: center;
-  text-transform: uppercase;
+  font-variant: small-caps;
   position: relative;
   background: #fff;
   display: block;
@@ -1077,7 +1077,7 @@ textarea {
   font-size: 14px;
   font-weight: 700;
   font-family: "Nexa Bold", sans-serif;
-  text-transform: uppercase;
+  font-variant: small-caps;
 }
 .advisors__list-link{
   display: block;
@@ -1147,7 +1147,7 @@ textarea {
   letter-spacing: 0.3px;
   font-weight: bold;
   line-height: 24px;
-  text-transform: uppercase;
+  font-variant: small-caps;
   text-align: center;
   margin-bottom: auto;
 }
@@ -1207,7 +1207,7 @@ textarea {
   font-family: "Nexa Bold", sans-serif;
   font-size: 20px;
   line-height: 24px;
-  text-transform: uppercase;
+  font-variant: small-caps;
 }
 /*END ===== EXAMPLE CASE STUDY ===== END*/
 
@@ -1262,7 +1262,7 @@ textarea {
   font-size: 28px;
   letter-spacing: 0.78px;
   font-weight: 700;
-  text-transform: uppercase;
+  font-variant: small-caps;
   padding-bottom: 18px;
 }
 .problem-solving-container-item__img{
@@ -1435,7 +1435,7 @@ textarea {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.56px;
-  text-transform: uppercase;
+  font-variant: small-caps;
   margin: 0;
   padding-bottom: 31px;
 }
@@ -1756,7 +1756,7 @@ textarea {
   font-family: "Nexa Bold", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  text-transform: uppercase;
+  font-variant: small-caps;
 }
 
 .popup__position {
@@ -2145,7 +2145,7 @@ textarea {
     bottom: -98px;
   }
 
-  .benefits {
+  .partners {
     margin-top: 50px;
   }
   .header-logo__wrapper{
@@ -2403,11 +2403,11 @@ textarea {
 
   }
 
-  .benefits {
+  .partners {
     margin-top: 50px;
   }
 
-  .benefits__title {
+  .partners__title {
     margin-top: 80px;
   }
 
@@ -2450,7 +2450,7 @@ textarea {
   .description__text {
     margin-top: 25px;
   }
-  .benefits__title
+  .partners__title
  /*  {
     margin-top: 0;
   }*/
@@ -2459,20 +2459,20 @@ textarea {
     width: auto;
   }
 
-  .benefits__content {
+  .partners__content {
     width: 100%;
   }
 
-  .benefits-card-info__text {
+  .partners-card-info__text {
     max-width: none;
   }
 
-  .benefits__container {
+  .partners__container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .benefits-card {
+  .partners-card {
     padding: 0 25px;
     margin-left: -6px;
     margin-right: -6px;
@@ -2480,37 +2480,37 @@ textarea {
     flex-direction: column-reverse;
   }
 
-  .benefits-card__info {
+  .partners-card__info {
     margin-right: 6px;
     margin-left: 6px;
   }
 
-  .benefits-card__image {
+  .partners-card__image {
     margin-right: 6px;
     margin-left: 6px;
     width: 105px;
     height: auto;
   }
 
-  .benefits-card-info__title {
+  .partners-card-info__title {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 15px;
     text-align: left;
   }
 
-  .benefits-card-info__text {
+  .partners-card-info__text {
     margin-top: 12px;
     font-family: "Open Sans";
     font-size: 14px;
     line-height: 24px;
   }
 
-  .benefits-card__image_speed {
+  .partners-card__image_speed {
     margin: 20px 0 16px 0;
   }
 
-  .benefits-card__image_cake {
+  .partners-card__image_cake {
     margin-bottom: 16px;
     margin-top: 20px;
   }
@@ -2758,7 +2758,7 @@ textarea {
   .shadow-card{
     width: auto;
   }
-  .benefits-card:nth-child(even){
+  .partners-card:nth-child(even){
     flex-direction: column-reverse;
   }
   .who-we-are{
